@@ -43,8 +43,8 @@
   <h1 lang="fr">Tableau de bord territorial</h1><h1 lang="en">Territorial dashboard</h1>
   <p lang="fr">Un avant-goût de ce qu'un tableau de bord peut offrir aux élus et aux équipes d'une MRC.</p>
   <p lang="en">A taste of what a dashboard can offer the elected officials and teams of a regional county municipality.</p>
-  <span class="avis" lang="fr">Territoire et données entièrement fictifs. Dans une version réelle, chaque valeur porte sa source et la mention « réel » ou « estimé ».</span>
-  <span class="avis" lang="en">Territory and data are entirely fictional. In a real version, each value carries its source and a “real” or “estimated” tag.</span>
+  <span class="avis" lang="fr">Le territoire et les données sont fictifs. Une version réelle indique la source de chaque valeur.</span>
+  <span class="avis" lang="en">The territory and the data are fictional. A real version shows the source of each value.</span>
 </div></section>
 <section class="app"><div class="enveloppe">
   <div class="onglets" id="piliers" role="group" aria-label="Piliers"></div>
@@ -55,8 +55,8 @@
     <div class="carte-app fiche" id="fiche" aria-live="polite"></div>
   </div>
     <div class="invitation">
-      <p lang="fr">Votre territoire aimerait un outil semblable, bâti sur ses propres données? Parlons-en.</p>
-      <p lang="en">Would your territory like a similar tool, built on its own data? Let's talk.</p>
+      <p lang="fr">Je peux bâtir un outil semblable à partir des données de votre territoire.</p>
+      <p lang="en">I can build a similar tool from your territory's data.</p>
       <a class="bouton" href="mailto:josiane.provost@usherbrooke.ca?subject=Tableau%20de%20bord%20territorial"><span lang="fr">M'écrire</span><span lang="en">Write to me</span></a>
     </div>
 </div></section>
@@ -95,7 +95,7 @@
     var I=P[pil].i[ind],k=I.k,vals=M.map(function(m){return m[k]}),mx=Math.max.apply(null,vals);
     document.getElementById('piliers').innerHTML=P.map(function(p,i){return '<button type="button" data-p="'+i+'" aria-pressed="'+(i===pil)+'">'+L(p.fr,p.en)+'</button>'}).join('');
     document.getElementById('indics').innerHTML=P[pil].i.map(function(x,i){return '<button type="button" data-i="'+i+'" aria-pressed="'+(i===ind)+'">'+L(x.fr,x.en)+'</button>'}).join('');
-    document.getElementById('leg').textContent=L('Carte schématique, du plus pâle (valeur faible) au plus foncé (valeur élevée)','Schematic map, from palest (low value) to darkest (high value)');
+    document.getElementById('leg').textContent=L('Une tuile foncée indique une valeur élevée.','A dark tile indicates a high value.');
     document.getElementById('titre-barres').textContent=L(I.fr,I.en);
     var s='';M.forEach(function(m,i){var t=mx?m[k]/mx:0,x=8+m.c*108,y=8+m.r*106,cl=t>.5?'#fff':'#0f3b33',mots=m.n.split('-'),l1=mots.slice(0,Math.ceil(mots.length/2)).join('-'),l2=mots.slice(Math.ceil(mots.length/2)).join('-');
       s+='<g data-m="'+i+'" tabindex="0" role="button" aria-label="'+m.n+'"><rect x="'+x+'" y="'+y+'" width="100" height="98" rx="16" fill="'+coul(.08+t*.92)+'" stroke="'+(i===sel?'#e3b04b':'rgba(15,59,51,.16)')+'" stroke-width="'+(i===sel?5:1)+'"/><text x="'+(x+50)+'" y="'+(y+44)+'" text-anchor="middle" font-size="26" font-weight="700" fill="'+cl+'">'+fmt(m[k])+'</text><text x="'+(x+50)+'" y="'+(y+66)+'" text-anchor="middle" font-size="10.5" fill="'+cl+'">'+l1+(l2?'-':'')+'</text><text x="'+(x+50)+'" y="'+(y+79)+'" text-anchor="middle" font-size="10.5" fill="'+cl+'">'+l2+'</text></g>'});

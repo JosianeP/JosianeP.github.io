@@ -41,19 +41,19 @@
 <main id="contenu">
 <section class="app-entete"><div class="enveloppe">
   <h1>RELAIS</h1>
-  <p lang="fr">Une version découverte de mon jeu sérieux sur la collaboration interprofessionnelle. Vous coordonnez quatre unités d'un réseau de santé en région pendant six tours, avec trop peu de monde pour tout faire.</p>
-  <p lang="en">A discovery version of my serious game on interprofessional collaboration. You coordinate four units of a rural health network over six rounds, with too few people to do everything.</p>
+  <p lang="fr">RELAIS est un jeu sérieux sur la collaboration interprofessionnelle. Cette version découverte dure six tours. Vous coordonnez quatre unités d'un réseau de santé en région avec un personnel limité.</p>
+  <p lang="en">RELAIS is a serious game on interprofessional collaboration. This discovery version lasts six rounds. You coordinate four units of a rural health network with limited staff.</p>
   <div class="regles">
-    <div><b lang="fr">Quatre personnes par tour</b><b lang="en">Four people per round</b><span lang="fr">Chaque geste mobilise une personne. Le personnel est rare, il faut choisir.</span><span lang="en">Each action takes one person. Staff are scarce, so you must choose.</span></div>
-    <div><b lang="fr">Prévenir avant de transférer</b><b lang="en">Call before you transfer</b><span lang="fr">Un appel à l'unité suivante prend du temps, mais la personne est attendue.</span><span lang="en">Calling the next unit takes time, but the person is expected.</span></div>
-    <div><b lang="fr">Sinon, le relais se brise</b><b lang="en">Otherwise the handoff breaks</b><span lang="fr">Sans appel, l'unité d'accueil perd un tour à chercher l'information.</span><span lang="en">Without a call, the receiving unit loses a round looking for information.</span></div>
+    <div><b lang="fr">Quatre personnes par tour</b><b lang="en">Four people per round</b><span lang="fr">Chaque geste mobilise une personne.</span><span lang="en">Each action takes one person.</span></div>
+    <div><b lang="fr">Prévenir avant de transférer</b><b lang="en">Call before you transfer</b><span lang="fr">L'appel à l'unité suivante mobilise une personne et assure la continuité.</span><span lang="en">Calling the next unit takes one person and ensures continuity.</span></div>
+    <div><b lang="fr">Sinon, le relais se brise</b><b lang="en">Otherwise the handoff breaks</b><span lang="fr">Un transfert sans appel fait perdre un tour à l'unité d'accueil.</span><span lang="en">A transfer without a call costs the receiving unit one round.</span></div>
   </div>
 </div></section>
 <section class="app"><div class="enveloppe">
   <div id="jeu"></div>
     <div class="invitation">
-      <p lang="fr">Le jeu complet se joue en classe, en quatre équipes qui doivent se parler à voix haute, avec une coordo qui module la difficulté. Envie de l'essayer avec vos étudiantes ou votre équipe?</p>
-      <p lang="en">The full game is played in class by four teams who must talk to each other out loud, with a coordinator who adjusts the difficulty. Want to try it with your students or your team?</p>
+      <p lang="fr">Le jeu complet se joue en classe avec quatre équipes et une coordo. Écrivez-moi pour l'essayer avec vos étudiantes ou votre équipe.</p>
+      <p lang="en">The full game is played in class with four teams and a coordinator. Write to me to try it with your students or your team.</p>
       <a class="bouton" href="mailto:josiane.provost@usherbrooke.ca?subject=Jeu%20RELAIS"><span lang="fr">M'écrire</span><span lang="en">Write to me</span></a>
     </div>
 </div></section>
@@ -90,7 +90,7 @@
       else note(p.n+L(' a reçu ses soins à l\'unité ',' received care in ')+nomU(p.t[p.pos])+'.')}
     else if(a==='appel'&&p.soin&&!p.appel){p.appel=true;S.pers--;note(L('Appel à l\'unité ','Call to ')+nomU(p.t[p.pos+1])+L(' pour annoncer ',' to announce ')+p.n+'.')}
     else if(a==='transfert'&&p.soin){S.pers--;var ok=p.appel;p.pos++;p.soin=false;p.appel=false;
-      if(ok)note(p.n+L(' arrive à l\'unité ',' arrives in ')+nomU(p.t[p.pos])+L(', où on l\'attendait.',', where the team was expecting them.'));
+      if(ok)note(p.n+L(' arrive à l\'unité ',' arrives in ')+nomU(p.t[p.pos])+L('. L\'équipe l\'attendait.','. The team was expecting them.'));
       else{p.bloc=1;S.ruptures++;note(L('Relais brisé. ','Broken handoff. ')+p.n+L(' arrive à l\'unité ',' arrives in ')+nomU(p.t[p.pos])+L(' sans que personne soit prévenu.',' and nobody was told.'),true)}}
     rendu()}
   function finTour(){if(S.fini)return;actifs().forEach(function(p){p.att++;if(p.bloc>0)p.bloc--});
@@ -107,7 +107,7 @@
   function rendu(){var el=document.getElementById('jeu'),h='';
     var finis=S.P.filter(function(p){return p.fait});
     if(S.fini){var att=S.P.reduce(function(s,p){return s+p.att},0),n=finis.length;
-      var msg=n>=4&&S.ruptures===0?L('Un réseau qui se parle. Presque tout le monde est arrivé à bon port, sans relais brisé.','A network that talks. Almost everyone reached the right place, with no broken handoff.'):S.ruptures>0?L('Chaque relais brisé a coûté un tour à une personne qui attendait déjà. L\'appel semblait une perte de temps; il en faisait gagner.','Each broken handoff cost a round to someone who was already waiting. The call looked like a waste of time; it actually saved some.'):L('Aucun relais brisé, mais le temps a manqué. Avec si peu de monde, à qui donner la priorité?','No broken handoff, but time ran out. With so few people, who comes first?');
+      var msg=n>=4&&S.ruptures===0?L('Presque toutes les trajectoires sont complétées et aucun relais ne s\'est brisé.','Almost every pathway is completed and no handoff was broken.'):S.ruptures>0?L('Chaque relais brisé a fait perdre un tour à une personne en attente. L\'appel à l\'unité suivante aurait évité ce délai.','Each broken handoff cost a waiting person one round. A call to the next unit would have avoided this delay.'):L('Aucun relais ne s\'est brisé. Le personnel a toutefois manqué pour compléter toutes les trajectoires.','No handoff was broken. Staff were however too few to complete every pathway.');
       h='<div class="carte-app bilan"><h2>'+L('Fin de la journée','End of the day')+'</h2><p>'+msg+'</p><div class="chiffres"><div><b>'+n+' / '+S.P.length+'</b><span>'+L('trajectoires complétées','pathways completed')+'</span></div><div><b>'+S.ruptures+'</b><span>'+L('relais brisés','broken handoffs')+'</span></div><div><b>'+att+'</b><span>'+L('tours d\'attente cumulés','rounds of waiting in total')+'</span></div></div><button type="button" class="bouton" id="rejouer">'+L('Rejouer la journée','Play the day again')+'</button></div>';
     }else{var pions='';for(var k=0;k<PERS;k++)pions+='<i'+(k>=S.pers?' class="pris"':'')+'></i>';
       h='<div class="etat"><span><b>'+L('Tour ','Round ')+S.tour+'</b> '+L('sur ','of ')+TOURS+'</span><span>'+L('Personnes disponibles','People available')+'<span class="pions" aria-label="'+S.pers+'">'+pions+'</span></span><span>'+L('Relais brisés ','Broken handoffs ')+'<b>'+S.ruptures+'</b></span><button type="button" class="bouton" id="fin">'+(S.tour===TOURS?L('Terminer la journée','End the day'):L('Passer au tour suivant','Go to the next round'))+'</button></div><div class="unites">';
