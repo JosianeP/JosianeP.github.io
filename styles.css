@@ -120,6 +120,16 @@ h1 span{display:block}
 @media (max-width:60rem){.boucle{grid-template-columns:1fr 1fr}.boucle li:nth-child(2){border-right:0}.boucle li:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.16)}}
 @media (max-width:34rem){.boucle{grid-template-columns:1fr}.boucle li{border-right:0;border-bottom:1px solid rgba(255,255,255,.16)}.boucle li:last-child{border-bottom:0}}
 
+/* Vitrines des applications */
+.vitrines{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.vitrine{display:flex;flex-direction:column;align-items:flex-start;text-decoration:none;color:var(--granit);background:var(--brume);border:1px solid var(--trait);border-radius:1.5rem;padding:1.5rem;transition:border-color .15s,transform .15s}
+.vitrine:hover{border-color:var(--epinette);transform:translateY(-3px)}
+.vitrine svg{width:100%;height:auto;border-radius:1rem;margin-bottom:1.4rem;border:1px solid var(--trait)}
+.vitrine h3{font-size:1.7rem;margin-bottom:.6rem}
+.vitrine p{font-size:1.05rem;margin-bottom:1.4rem}
+.vitrine .bouton{margin-top:auto}
+@media (max-width:52rem){.vitrines{grid-template-columns:1fr}}
+
 /* Projets */
 .projets{border-top:1px solid var(--trait)}
 .projet{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1rem 3rem;padding-block:2.25rem;border-bottom:1px solid var(--trait)}
