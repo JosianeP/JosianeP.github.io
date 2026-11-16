@@ -41,8 +41,8 @@
 <main id="contenu">
 <section class="app-entete"><div class="enveloppe">
   <h1 lang="fr">Tableau de bord territorial</h1><h1 lang="en">Territorial dashboard</h1>
-  <p lang="fr">Un avant-goût de ce qu'un tableau de bord peut offrir aux élus et aux équipes d'une MRC. Choisissez un pilier, un indicateur, puis une municipalité.</p>
-  <p lang="en">A taste of what a dashboard can offer the elected officials and teams of a regional county municipality. Pick a pillar, an indicator, then a municipality.</p>
+  <p lang="fr">Un avant-goût de ce qu'un tableau de bord peut offrir aux élus et aux équipes d'une MRC.</p>
+  <p lang="en">A taste of what a dashboard can offer the elected officials and teams of a regional county municipality.</p>
   <span class="avis" lang="fr">Territoire et données entièrement fictifs. Dans une version réelle, chaque valeur porte sa source et la mention « réel » ou « estimé ».</span>
   <span class="avis" lang="en">Territory and data are entirely fictional. In a real version, each value carries its source and a “real” or “estimated” tag.</span>
 </div></section>
@@ -51,7 +51,7 @@
   <div class="choix" id="indics" role="group" aria-label="Indicateurs"></div>
   <div class="panneaux">
     <div class="carte-app"><h2 lang="fr">MRC des Hautes-Collines</h2><h2 lang="en">MRC des Hautes-Collines</h2><p class="sous" id="leg"></p><svg class="tuiles" id="tuiles" viewBox="0 0 440 330" role="group" aria-label="Carte schématique"></svg></div>
-    <div class="carte-app"><h2 id="titre-barres"></h2><p class="sous" lang="fr">Classement des huit municipalités. Cliquez pour ouvrir la fiche.</p><p class="sous" lang="en">Ranking of the eight municipalities. Click to open the profile.</p><div class="barres" id="barres"></div></div>
+    <div class="carte-app"><h2 id="titre-barres"></h2><p class="sous" lang="fr">Classement des huit municipalités</p><p class="sous" lang="en">Ranking of the eight municipalities</p><div class="barres" id="barres"></div></div>
     <div class="carte-app fiche" id="fiche" aria-live="polite"></div>
   </div>
     <div class="invitation">
@@ -95,7 +95,7 @@
     var I=P[pil].i[ind],k=I.k,vals=M.map(function(m){return m[k]}),mx=Math.max.apply(null,vals);
     document.getElementById('piliers').innerHTML=P.map(function(p,i){return '<button type="button" data-p="'+i+'" aria-pressed="'+(i===pil)+'">'+L(p.fr,p.en)+'</button>'}).join('');
     document.getElementById('indics').innerHTML=P[pil].i.map(function(x,i){return '<button type="button" data-i="'+i+'" aria-pressed="'+(i===ind)+'">'+L(x.fr,x.en)+'</button>'}).join('');
-    document.getElementById('leg').textContent=L('Carte schématique. Plus la tuile est foncée, plus la valeur est élevée.','Schematic map. The darker the tile, the higher the value.');
+    document.getElementById('leg').textContent=L('Carte schématique, du plus pâle (valeur faible) au plus foncé (valeur élevée)','Schematic map, from palest (low value) to darkest (high value)');
     document.getElementById('titre-barres').textContent=L(I.fr,I.en);
     var s='';M.forEach(function(m,i){var t=mx?m[k]/mx:0,x=8+m.c*108,y=8+m.r*106,cl=t>.5?'#fff':'#0f3b33',mots=m.n.split('-'),l1=mots.slice(0,Math.ceil(mots.length/2)).join('-'),l2=mots.slice(Math.ceil(mots.length/2)).join('-');
       s+='<g data-m="'+i+'" tabindex="0" role="button" aria-label="'+m.n+'"><rect x="'+x+'" y="'+y+'" width="100" height="98" rx="16" fill="'+coul(.08+t*.92)+'" stroke="'+(i===sel?'#e3b04b':'rgba(15,59,51,.16)')+'" stroke-width="'+(i===sel?5:1)+'"/><text x="'+(x+50)+'" y="'+(y+44)+'" text-anchor="middle" font-size="26" font-weight="700" fill="'+cl+'">'+fmt(m[k])+'</text><text x="'+(x+50)+'" y="'+(y+66)+'" text-anchor="middle" font-size="10.5" fill="'+cl+'">'+l1+(l2?'-':'')+'</text><text x="'+(x+50)+'" y="'+(y+79)+'" text-anchor="middle" font-size="10.5" fill="'+cl+'">'+l2+'</text></g>'});
