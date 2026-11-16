@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Josiane Provost - Santé rurale, soins infirmiers et conseil scientifique</title>
+<title>Josiane Provost - Le territoire apprenant, santé rurale et conseil scientifique</title>
 <meta name="description" content="Josiane Provost, infirmière et chercheuse en sciences de la santé à l'Université de Sherbrooke, scientifique en chef de la MRC du Granit. Recherche sur la qualité des soins infirmiers en milieu rural, le numérique en santé et la gouvernance territoriale.">
 <meta property="og:title" content="Josiane Provost - Recherche en santé rurale">
 <meta property="og:description" content="Soins infirmiers en milieu rural, numérique en santé et conseil scientifique municipal.">
@@ -14,186 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-<style>
-:root{
-  --epinette:#0f3b33;
-  --epinette-2:#17524a;
-  --granit:#26302e;
-  --ardoise:#5b6966;
-  --brume:#eef2ef;
-  --givre:#dfe7e2;
-  --blanc:#ffffff;
-  --or:#e3b04b;
-  --or-fonce:#8a6412;
-  --trait:rgba(15,59,51,.16);
-  --sans:"Bricolage Grotesque","Avenir Next","Segoe UI",system-ui,sans-serif;
-  --serif:"Source Serif 4","Iowan Old Style",Georgia,serif;
-  --mesure:66ch;
-  --gouttiere:clamp(1.25rem,4vw,3.5rem);
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:5rem;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--brume);color:var(--granit);font-family:var(--serif);font-size:1.125rem;line-height:1.65;-webkit-font-smoothing:antialiased}
-html[data-lang="fr"] [lang="en"],html[data-lang="en"] [lang="fr"]{display:none!important}
-img{max-width:100%;display:block}
-a{color:var(--epinette);text-decoration-thickness:1px;text-underline-offset:.18em}
-a:hover{text-decoration-thickness:2px}
-:focus-visible{outline:3px solid var(--or);outline-offset:3px;border-radius:4px}
-h1,h2,h3,h4{font-family:var(--sans);line-height:1.08;margin:0;font-weight:600;letter-spacing:-.02em;color:var(--epinette)}
-p{margin:0 0 1em}
-ul{margin:0;padding:0;list-style:none}
-.enveloppe{max-width:78rem;margin-inline:auto;padding-inline:var(--gouttiere)}
-.saut{position:absolute;left:-999px;top:0;background:var(--epinette);color:#fff;padding:.6rem 1rem;z-index:100}
-.saut:focus{left:.5rem;top:.5rem}
-
-/* Navigation */
-.barre{position:sticky;top:0;z-index:50;background:rgba(238,242,239,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--trait)}
-.barre .enveloppe{display:flex;align-items:center;gap:1.5rem;min-height:4rem}
-.marque{font-family:var(--sans);font-weight:700;font-size:1.05rem;letter-spacing:-.01em;text-decoration:none;color:var(--epinette);display:flex;align-items:center;gap:.6rem;margin-right:auto}
-.marque svg{width:1.7rem;height:1.7rem;flex:none}
-.liens{display:flex;gap:.25rem;font-family:var(--sans);font-size:.95rem}
-.liens a{text-decoration:none;color:var(--granit);padding:.45rem .7rem;border-radius:999px}
-.liens a:hover{background:var(--givre)}
-.liens a[aria-current="true"]{background:var(--epinette);color:#fff}
-.langue{font-family:var(--sans);font-size:.9rem;font-weight:600;border:1px solid var(--epinette);background:transparent;color:var(--epinette);border-radius:999px;padding:.35rem .85rem;cursor:pointer}
-.langue:hover{background:var(--epinette);color:#fff}
-@media (max-width:60rem){
-  .liens{display:none}
-}
-
-/* Ouverture */
-.ouverture{position:relative;overflow:hidden;border-bottom:1px solid var(--trait)}
-.relief{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.relief path{fill:none;stroke:var(--epinette);stroke-width:1;opacity:0;animation:leve 1.1s ease-out forwards}
-.relief path.maitresse{stroke-width:1.9}
-@keyframes leve{to{opacity:var(--o,.2)}}
-.ouverture .enveloppe{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(2rem,5vw,5rem);align-items:end;padding-block:clamp(3rem,8vw,6.5rem) 0}
-.ouverture-texte{padding-bottom:clamp(3rem,7vw,6rem)}
-.qualite{font-family:var(--sans);font-size:1rem;font-weight:500;color:var(--epinette-2);margin:0 0 1.5rem;display:flex;flex-wrap:wrap;gap:.4rem .6rem}
-.qualite span{background:var(--blanc);border:1px solid var(--trait);border-radius:999px;padding:.25rem .8rem}
-h1{font-size:clamp(3.2rem,9.5vw,8rem);font-weight:700;letter-spacing:-.045em;line-height:.9;margin-bottom:1.75rem}
-h1 span{display:block}
-.amorce{font-size:clamp(1.25rem,2.1vw,1.6rem);line-height:1.4;max-width:34ch;color:var(--granit);margin-bottom:2rem}
-.actions{display:flex;flex-wrap:wrap;gap:.75rem}
-.bouton{font-family:var(--sans);font-weight:600;font-size:1rem;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:999px;border:1.5px solid var(--epinette);background:var(--epinette);color:#fff;transition:background .15s,color .15s}
-.bouton:hover{background:var(--epinette-2)}
-.bouton.clair{background:transparent;color:var(--epinette)}
-.bouton.clair:hover{background:var(--epinette);color:#fff}
-.portrait{align-self:end;background:var(--givre);border-radius:999px 999px 0 0;overflow:hidden;border:1px solid var(--trait);border-bottom:0;aspect-ratio:4/5;display:flex;align-items:flex-end}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;mix-blend-mode:multiply}
-@media (max-width:52rem){
-  .ouverture .enveloppe{grid-template-columns:1fr}
-  .ouverture-texte{padding-bottom:0}
-  .portrait{max-width:20rem;justify-self:center;width:100%}
-}
-
-/* Bandeau à venir */
-.avenir{background:var(--or);color:#2a2005;font-family:var(--sans);font-size:1rem}
-.avenir .enveloppe{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem;align-items:baseline;padding-block:.9rem}
-.avenir strong{font-weight:700}
-.avenir a{color:inherit}
-
-/* Sections */
-.section{padding-block:clamp(4rem,9vw,7.5rem)}
-.section>.enveloppe>h2{font-size:clamp(2.2rem,5vw,3.75rem);letter-spacing:-.035em;margin-bottom:.6em;max-width:18ch}
-.chapeau{font-size:1.3rem;line-height:1.5;max-width:var(--mesure);margin-bottom:3rem}
-.prose{max-width:var(--mesure)}
-
-/* Trois rôles */
-.roles{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--trait)}
-.roles>div{padding:2rem 2rem 2rem 0;border-right:1px solid var(--trait)}
-.roles>div+div{padding-left:2rem}
-.roles>div:last-child{border-right:0;padding-right:0}
-.roles h3{font-size:1.45rem;margin-bottom:.6rem}
-.roles p{font-size:1.02rem;margin:0;color:var(--granit)}
-.roles .lieu{font-family:var(--sans);font-size:.92rem;color:var(--ardoise);margin-bottom:.9rem}
-@media (max-width:52rem){
-  .roles{grid-template-columns:1fr}
-  .roles>div,.roles>div+div{padding:1.5rem 0;border-right:0;border-bottom:1px solid var(--trait)}
-}
-
-/* Programmation */
-.sombre{background:var(--epinette);color:#e7efe9;position:relative;overflow:hidden}
-.sombre h2,.sombre h3{color:#fff}
-.sombre .chapeau{color:#d5e2da}
-.sombre a{color:var(--or)}
-.axes{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-.axe{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.14);border-radius:1.25rem;padding:2rem 1.75rem 1.75rem;display:flex;flex-direction:column}
-.axe svg{width:3.25rem;height:3.25rem;margin-bottom:1.5rem;stroke:var(--or);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-.axe h3{font-size:1.5rem;margin-bottom:.8rem}
-.axe p{font-size:1.02rem;margin-bottom:1.25rem}
-.axe ul{margin-top:auto;font-family:var(--sans);font-size:.92rem;display:flex;flex-wrap:wrap;gap:.4rem}
-.axe li{border:1px solid rgba(227,176,75,.5);color:#f3dfb0;border-radius:999px;padding:.15rem .7rem}
-@media (max-width:60rem){.axes{grid-template-columns:1fr}}
-
-/* Projets */
-.projets{border-top:1px solid var(--trait)}
-.projet{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:1rem 3rem;padding-block:2.25rem;border-bottom:1px solid var(--trait)}
-.projet h3{font-size:clamp(1.6rem,3vw,2.3rem);letter-spacing:-.03em}
-.projet .nature{font-family:var(--sans);font-size:.95rem;color:var(--ardoise);margin-top:.6rem}
-.projet p{margin:0;max-width:var(--mesure)}
-.projet p+p{margin-top:.8em}
-@media (max-width:52rem){.projet{grid-template-columns:1fr}}
-
-/* Publications */
-.clair{background:var(--blanc)}
-.filtres{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem;font-family:var(--sans)}
-.filtres button{font:inherit;font-size:.95rem;font-weight:500;border:1px solid var(--trait);background:var(--brume);color:var(--granit);border-radius:999px;padding:.4rem 1rem;cursor:pointer}
-.filtres button[aria-pressed="true"]{background:var(--epinette);border-color:var(--epinette);color:#fff}
-.refs li{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;padding-block:1.1rem;border-top:1px solid var(--trait)}
-.refs li[hidden]{display:none}
-.refs .an{font-family:var(--sans);font-weight:600;font-size:1.15rem;color:var(--epinette)}
-.refs .corps{max-width:74ch;font-size:1.02rem;line-height:1.55}
-.refs .titre{font-family:var(--sans);font-weight:600;font-size:1.08rem;line-height:1.35;color:var(--granit);display:block;margin-bottom:.25rem}
-.refs .genre{font-family:var(--sans);font-size:.85rem;color:var(--or-fonce);display:block;margin-top:.35rem}
-.refs .moi{text-decoration:underline;text-decoration-color:var(--or);text-decoration-thickness:2px;text-underline-offset:.2em}
-@media (max-width:40rem){.refs li{grid-template-columns:1fr;gap:.2rem}}
-
-/* Parcours */
-.colonnes{display:grid;grid-template-columns:1fr 1fr;gap:3rem clamp(2rem,6vw,5rem)}
-.colonnes h3{font-size:1.5rem;margin-bottom:1.5rem}
-.fil{border-left:2px solid var(--epinette);margin-left:.35rem}
-.fil li{position:relative;padding:0 0 1.6rem 1.6rem}
-.fil li:last-child{padding-bottom:0}
-.fil li::before{content:"";position:absolute;left:-.45rem;top:.5rem;width:.75rem;height:.75rem;border-radius:50%;background:var(--brume);border:2px solid var(--epinette)}
-.fil li.actuel::before{background:var(--or);border-color:var(--or-fonce)}
-.fil .quand{font-family:var(--sans);font-size:.92rem;font-weight:600;color:var(--epinette-2);display:block}
-.fil .quoi{font-family:var(--sans);font-weight:600;font-size:1.1rem;line-height:1.3;display:block}
-.fil .ou{font-size:1rem;color:var(--ardoise);display:block;line-height:1.45;margin-top:.15rem}
-.liste li{padding:.75rem 0;border-top:1px solid var(--trait);font-size:1.02rem;line-height:1.45;display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:1rem}
-.liste .quand{font-family:var(--sans);font-weight:600;font-size:.95rem;color:var(--epinette-2)}
-.cours{display:flex;flex-wrap:wrap;gap:.5rem;font-family:var(--sans);font-size:.95rem}
-.cours li{background:var(--blanc);border:1px solid var(--trait);border-radius:.6rem;padding:.4rem .8rem;line-height:1.3}
-.cours b{font-weight:600;color:var(--epinette)}
-.telecharger{margin-top:3.5rem;background:var(--blanc);border:1px solid var(--trait);border-radius:1.25rem;padding:1.75rem 2rem;display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between}
-.telecharger p{margin:0;max-width:48ch;font-size:1.02rem}
-@media (max-width:52rem){.colonnes{grid-template-columns:1fr}}
-
-/* Contact */
-.contact{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:3rem;align-items:end}
-.contact h2{font-size:clamp(2.4rem,6.5vw,5rem);letter-spacing:-.04em;max-width:13ch}
-.courriel{font-family:var(--sans);font-size:clamp(1.1rem,2.4vw,1.6rem);font-weight:500;word-break:break-word}
-.reseaux{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.5rem;font-family:var(--sans)}
-.reseaux a{text-decoration:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:999px;padding:.45rem 1.1rem;font-size:.98rem}
-.reseaux a:hover{background:#fff;color:var(--epinette)}
-@media (max-width:52rem){.contact{grid-template-columns:1fr}}
-footer{background:#0a2a25;color:#b9cbc2;font-family:var(--sans);font-size:.9rem}
-footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;padding-block:1.5rem}
-
-@media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .relief path{animation:none;opacity:var(--o,.2)}
-  *{transition:none!important}
-}
-@media print{
-  .barre,.relief,.filtres,.avenir,.langue{display:none}
-  body{background:#fff;font-size:11pt}
-  .sombre{background:#fff;color:#000}.sombre h2,.sombre h3{color:#000}
-  .section{padding-block:1.5rem}
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-titre-fr="Josiane Provost - Le territoire apprenant, santé rurale et conseil scientifique" data-titre-en="Josiane Provost - The learning territory, rural health and science advice">
 <a class="saut" href="#contenu"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
 
 <header class="barre">
@@ -205,7 +28,7 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
     <nav class="liens" aria-label="Sections">
       <a href="#recherche"><span lang="fr">Recherche</span><span lang="en">Research</span></a>
       <a href="#projets"><span lang="fr">Projets</span><span lang="en">Projects</span></a>
-      <a href="#publications">Publications</a>
+      <a href="publications.html">Publications</a>
       <a href="#parcours"><span lang="fr">Parcours</span><span lang="en">CV</span></a>
       <a href="#contact">Contact</a>
     </nav>
@@ -225,10 +48,12 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
         <span lang="fr">MRC du Granit</span><span lang="en">MRC du Granit</span>
       </p>
       <h1><span>Josiane</span><span>Provost</span></h1>
-      <p class="amorce" lang="fr">Je mesure ce qui échappe aux soins infirmiers dans les urgences rurales et je mets la science au service des décisions d'un territoire.</p>
-      <p class="amorce" lang="en">I measure the nursing care that goes undone in rural emergency departments, and I bring science into the decisions of a rural territory.</p>
+      <p class="idee" lang="fr">Le territoire apprenant</p>
+      <p class="idee" lang="en">The learning territory</p>
+      <p class="amorce" lang="fr">J'explore comment un territoire peut apprendre de ses propres données pour agir sur la santé de sa population, bien avant l'hôpital.</p>
+      <p class="amorce" lang="en">I explore how a territory can learn from its own data to act on the health of its population, long before the hospital.</p>
       <div class="actions">
-        <a class="bouton" href="#recherche"><span lang="fr">Voir la programmation de recherche</span><span lang="en">See the research program</span></a>
+        <a class="bouton" href="#recherche"><span lang="fr">Découvrir le territoire apprenant</span><span lang="en">Discover the learning territory</span></a>
         <a class="bouton clair" href="#parcours"><span lang="fr">Consulter le parcours</span><span lang="en">View the CV</span></a>
       </div>
     </div>
@@ -241,8 +66,8 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
 <aside class="avenir">
   <div class="enveloppe">
     <strong lang="fr">À venir, 27 novembre 2026</strong><strong lang="en">Upcoming, November 27, 2026</strong>
-    <span lang="fr">Conférence au colloque 2026 de l'Association médicale canadienne, Centre des congrès de Québec, « Créer de la valeur en santé : et si tout commençait dans les communautés? »</span>
-    <span lang="en">Talk at the Canadian Medical Association 2026 colloquium, Québec City Convention Centre, on creating value in health by starting with communities.</span>
+    <span lang="fr">« Le milieu municipal, un acteur essentiel en santé », conférence avec la préfète Monique Phérivong Lenoir au colloque 2026 de l'Association médicale canadienne, à Québec.</span>
+    <span lang="en">“Le milieu municipal, un acteur essentiel en santé”, a talk with Prefect Monique Phérivong Lenoir at the Canadian Medical Association 2026 colloquium in Québec City.</span>
   </div>
 </aside>
 
@@ -279,34 +104,41 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
 
 <section class="section sombre" id="recherche">
   <div class="enveloppe">
-    <h2 lang="fr">Programmation de recherche</h2>
-    <h2 lang="en">Research program</h2>
-    <p class="chapeau" lang="fr">Trois axes qui se nourrissent l'un l'autre, tous ancrés dans le milieu rural où je vis et travaille.</p>
-    <p class="chapeau" lang="en">Three strands that feed one another, all rooted in the rural setting where I live and work.</p>
+    <h2 lang="fr">Le territoire apprenant</h2>
+    <h2 lang="en">The learning territory</h2>
+    <p class="chapeau" lang="fr">Transport, habitation, écoles, loisirs. Les municipalités prennent chaque jour des décisions qui façonnent la santé, souvent sans les nommer ainsi. Ma programmation de recherche explore comment un territoire peut observer ces effets, en tirer des connaissances et ajuster ses choix.</p>
+    <p class="chapeau" lang="en">Transit, housing, schools, recreation. Every day, municipalities make decisions that shape health, often without calling it that. My research program explores how a territory can observe these effects, learn from them and adjust its choices.</p>
+    <ol class="boucle">
+      <li><b lang="fr">Observer</b><b lang="en">Observe</b><span lang="fr">Rassembler les données du territoire, y compris celles qui dorment dans les municipalités.</span><span lang="en">Bring the territory's data together, including data that sits unused in municipalities.</span></li>
+      <li><b lang="fr">Comprendre</b><b lang="en">Understand</b><span lang="fr">Relier ces données aux déterminants sociaux de la santé, avec les gens du milieu.</span><span lang="en">Link these data to the social determinants of health, with local people.</span></li>
+      <li><b lang="fr">Décider</b><b lang="en">Decide</b><span lang="fr">Éclairer les choix des élus et des équipes municipales par des avis lisibles.</span><span lang="en">Inform the choices of elected officials and municipal teams with readable advice.</span></li>
+      <li><b lang="fr">Apprendre</b><b lang="en">Learn</b><span lang="fr">Suivre ce que ces choix changent pour la santé et l'accès aux soins, puis recommencer.</span><span lang="en">Follow what these choices change for health and access to care, then start again.</span></li>
+    </ol>
+    <p class="retour"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg><span lang="fr">Une boucle plutôt qu'une ligne droite, menée en recherche-action avec le milieu.</span><span lang="en">A loop rather than a straight line, carried out as action research with the community.</span></p>
     <div class="axes">
       <article class="axe">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 30h9l4-12 6 22 5-16 3 6h13"/><circle cx="38" cy="12" r="5"/></svg>
-        <h3 lang="fr">Qualité des soins infirmiers en milieu rural</h3>
-        <h3 lang="en">Quality of nursing care in rural settings</h3>
-        <p lang="fr">Rendre visible ce qui ne se voit pas dans les données courantes, soit les soins requis qui sont retardés, écourtés ou jamais donnés, puis en comprendre les causes et les conséquences pour les patients.</p>
-        <p lang="en">Making visible what routine data cannot show, namely required care that is delayed, cut short or never delivered, then understanding its causes and its consequences for patients.</p>
-        <ul><li>NURSOMIT</li><li lang="fr">Psychométrie</li><li lang="en">Psychometrics</li><li lang="fr">Urgences rurales</li><li lang="en">Rural emergency care</li></ul>
-      </article>
-      <article class="axe">
-        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="10" cy="12" r="4"/><circle cx="38" cy="10" r="4"/><circle cx="24" cy="26" r="5"/><circle cx="10" cy="40" r="4"/><circle cx="38" cy="38" r="4"/><path d="M13 15l7 7M35 13l-7 9M13 37l7-7M35 35l-7-6"/></svg>
-        <h3 lang="fr">Numérique et informatique de la santé</h3>
-        <h3 lang="en">Digital health and health informatics</h3>
-        <p lang="fr">Mettre à profit une formation en génie informatique et en science des données pour concevoir des ontologies, des jeux sérieux et des outils d'aide à la décision utiles aux équipes de soins.</p>
-        <p lang="en">Drawing on training in computer engineering and data science to design ontologies, serious games and decision-support tools that are useful to care teams.</p>
-        <ul><li lang="fr">Ontologies</li><li lang="en">Ontologies</li><li lang="fr">Jeux sérieux</li><li lang="en">Serious games</li><li lang="fr">Simulation</li><li lang="en">Simulation</li></ul>
+        <h3 lang="fr">Accessibilité et qualité des soins en milieu rural</h3>
+        <h3 lang="en">Access to and quality of care in rural settings</h3>
+        <p lang="fr">La pierre angulaire. Comprendre ce qui facilite ou freine l'accès à des soins de qualité loin des grands centres, dans le prolongement de mes travaux menés dans les urgences rurales.</p>
+        <p lang="en">The cornerstone. Understanding what helps or hinders access to quality care far from large centres, building on my work in rural emergency departments.</p>
+        <ul><li lang="fr">Urgences rurales</li><li lang="en">Rural emergency care</li><li lang="fr">Qualité des soins</li><li lang="en">Quality of care</li><li>NURSOMIT</li></ul>
       </article>
       <article class="axe">
         <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 38c6-3 9-10 14-10s6 6 12 6 8-8 14-10"/><path d="M4 28c5-2 8-12 14-12s7 8 12 8 9-10 14-12"/><path d="M24 6v6M21 9h6"/></svg>
-        <h3 lang="fr">Gouvernance territoriale de la santé</h3>
-        <h3 lang="en">Territorial health governance</h3>
-        <p lang="fr">Étudier et pratiquer le conseil scientifique municipal, là où les compétences d'une MRC touchent de près les déterminants sociaux de la santé, et outiller les élus avec des données lisibles.</p>
-        <p lang="en">Studying and practising municipal science advice, where the powers of a regional county municipality bear directly on the social determinants of health, and equipping elected officials with readable data.</p>
-        <ul><li lang="fr">Conseil scientifique</li><li lang="en">Science advice</li><li lang="fr">Déterminants sociaux</li><li lang="en">Social determinants</li><li lang="fr">Tableaux de bord</li><li lang="en">Dashboards</li></ul>
+        <h3 lang="fr">Municipalités et déterminants sociaux de la santé</h3>
+        <h3 lang="en">Municipalities and the social determinants of health</h3>
+        <p lang="fr">Explorer comment les décisions municipales agissent sur la santé en amont, avec les décideurs qui font de la santé sans toujours s'en rendre compte, et ce que l'infirmière en santé publique peut y apporter.</p>
+        <p lang="en">Exploring how municipal decisions act on health upstream, with decision-makers who do health work without always realizing it, and what public health nursing can bring to it.</p>
+        <ul><li lang="fr">Santé en amont</li><li lang="en">Upstream health</li><li lang="fr">Milieu municipal</li><li lang="en">Municipal sector</li><li lang="fr">Recherche-action</li><li lang="en">Action research</li></ul>
+      </article>
+      <article class="axe">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="10" cy="12" r="4"/><circle cx="38" cy="10" r="4"/><circle cx="24" cy="26" r="5"/><circle cx="10" cy="40" r="4"/><circle cx="38" cy="38" r="4"/><path d="M13 15l7 7M35 13l-7 9M13 37l7-7M35 35l-7-6"/></svg>
+        <h3 lang="fr">Données, gouvernance territoriale et numérique</h3>
+        <h3 lang="en">Data, territorial governance and digital transformation</h3>
+        <p lang="fr">Examiner comment un territoire peut garder la maîtrise de ses données et s'en servir pour décider, en mettant à profit une formation en génie informatique et en science des données.</p>
+        <p lang="en">Examining how a territory can keep control of its data and use it to decide, drawing on training in computer engineering and data science.</p>
+        <ul><li lang="fr">Souveraineté des données</li><li lang="en">Data sovereignty</li><li lang="fr">Tableaux de bord</li><li lang="en">Dashboards</li><li lang="fr">Ontologies</li><li lang="en">Ontologies</li></ul>
       </article>
     </div>
   </div>
@@ -320,8 +152,8 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
       <article class="projet">
         <div>
           <h3>NURSOMIT</h3>
-          <p class="nature" lang="fr">Projet doctoral, soutenu par les IRSC, le BCI et l'axe SPOP du Centre de recherche du CHUS</p>
-          <p class="nature" lang="en">Doctoral project, supported by CIHR, the BCI and the SPOP axis of the CHUS Research Centre</p>
+          <p class="nature" lang="fr">Projet doctoral, soutenu par une bourse doctorale des IRSC, le BCI et l'axe SPOP du Centre de recherche du CHUS</p>
+          <p class="nature" lang="en">Doctoral project, supported by a CIHR doctoral award, the BCI and the SPOP axis of the CHUS Research Centre</p>
         </div>
         <div>
           <p lang="fr">Développement et validation d'un instrument de 47 énoncés qui mesure l'omission des soins infirmiers dans les urgences rurales, du triage à la salle de réanimation. Le contenu a été validé par une étude Delphi auprès de 14 experts et par des entrevues cognitives, puis mis à l'épreuve dans une enquête nationale auprès d'infirmières d'urgence.</p>
@@ -347,8 +179,8 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
           <p class="nature" lang="en">Biomedical ontology and serious game</p>
         </div>
         <div>
-          <p lang="fr">La Post-Operative Pain Management Ontology est un prototype d'ontologie de la gestion de la douleur postopératoire en orthopédie, conçu pour alimenter le jeu sérieux En-quête-Santé. L'affiche a été présentée au 46e congrès de la Société canadienne de la douleur à Québec en 2026.</p>
-          <p lang="en">The Post-Operative Pain Management Ontology is a prototype ontology of postoperative pain management in orthopaedics, designed to power the serious game En-quête-Santé. The poster was presented at the 46th Canadian Pain Society annual meeting in Québec City in 2026.</p>
+          <p lang="fr">La Post-Operative Pain Management Ontology est un prototype d'ontologie de la gestion de la douleur postopératoire en orthopédie, conçu pour alimenter le jeu sérieux En-quête-Santé. Le cadre a été présenté en 2026 au 93e Congrès de l'Acfas et au congrès de la Société canadienne de la douleur.</p>
+          <p lang="en">The Post-Operative Pain Management Ontology is a prototype ontology of postoperative pain management in orthopaedics, designed to power the serious game En-quête-Santé. The framework was presented in 2026 at the 93rd Acfas Congress and at the Canadian Pain Society annual meeting.</p>
         </div>
       </article>
       <article class="projet">
@@ -358,8 +190,8 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
           <p class="nature" lang="en">Francophone student scientific journal</p>
         </div>
         <div>
-          <p lang="fr">Cofondatrice et directrice de la revue scientifique étudiante francophone en sciences de la santé de l'Université de Sherbrooke, un lieu où la relève apprend à publier et à évaluer en français.</p>
-          <p lang="en">Co-founder and director of the francophone student scientific journal in health sciences at the Université de Sherbrooke, where emerging researchers learn to publish and to review in French.</p>
+          <p lang="fr">Cofondatrice et, depuis 2025, directrice de la revue scientifique étudiante francophone en sciences de la santé de l'Université de Sherbrooke, un lieu où la relève apprend à publier et à évaluer en français.</p>
+          <p lang="en">Co-founder and, since 2025, director of the francophone student scientific journal in health sciences at the Université de Sherbrooke, where emerging researchers learn to publish and to review in French.</p>
         </div>
       </article>
     </div>
@@ -369,37 +201,17 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
 <section class="section clair" id="publications">
   <div class="enveloppe">
     <h2>Publications</h2>
-    <p class="chapeau" lang="fr">Articles évalués par les pairs et communications choisies. La liste complète se trouve sur <a href="https://orcid.org/0000-0001-9698-2990" rel="noopener">ORCID</a>.</p>
-    <p class="chapeau" lang="en">Peer-reviewed articles and selected presentations. The full list is on <a href="https://orcid.org/0000-0001-9698-2990" rel="noopener">ORCID</a>.</p>
-    <div class="filtres" role="group" aria-label="Filtrer">
-      <button type="button" data-filtre="tout" aria-pressed="true"><span lang="fr">Tout</span><span lang="en">All</span></button>
-      <button type="button" data-filtre="article" aria-pressed="false">Articles</button>
-      <button type="button" data-filtre="comm" aria-pressed="false"><span lang="fr">Conférences</span><span lang="en">Talks</span></button>
-      <button type="button" data-filtre="affiche" aria-pressed="false"><span lang="fr">Affiches</span><span lang="en">Posters</span></button>
-    </div>
-    <ul class="refs" id="refs">
-      <li data-type="comm"><span class="an">2026</span><div class="corps"><span class="titre">Colloque 2026 de l'Association médicale canadienne, bloc « Mieux comprendre les communautés »</span><span class="moi">Provost, J.</span> Conférence, Centre des congrès de Québec, 27 novembre 2026.<span class="genre"><span lang="fr">Conférence invitée, à venir</span><span lang="en">Invited talk, upcoming</span></span></div></li>
-      <li data-type="comm"><span class="an">2026</span><div class="corps"><span class="titre">Le modèle de conseil scientifique de la MRC du Granit</span><span class="moi">Provost, J.</span> Présentation et table ronde avec Monique Phérivong Lenoir, préfète. Entretiens Jacques Cartier, journée « Vers une souveraineté scientifique des municipalités et des collectivités locales », Victoriaville, 10 novembre 2026.<span class="genre"><span lang="fr">Présentation et table ronde</span><span lang="en">Talk and panel</span></span></div></li>
-      <li data-type="comm"><span class="an">2026</span><div class="corps"><span class="titre">Les inégalités sociales de santé chez les jeunes</span>Shareck, M. et <span class="moi">Provost, J.</span> Table de concertation jeunesse de Coaticook, 9 novembre 2026.<span class="genre"><span lang="fr">Conférence</span><span lang="en">Talk</span></span></div></li>
-      <li data-type="article"><span class="an">2026</span><div class="corps"><span class="titre">Understanding nursing care omissions and assessment tools in emergency departments: A scoping review</span><span class="moi">Provost, J.</span> et coll. Canadian Journal of Emergency Nursing.<span class="genre"><span lang="fr">Article accepté</span><span lang="en">Accepted article</span></span></div></li>
-      <li data-type="article"><span class="an">2026</span><div class="corps"><span class="titre">The characteristics of working overtime and their associations with nurse and patient outcomes: A systematic review of observational studies</span>Braiki, R., <span class="moi">Provost, J.</span> et Rochefort, C. M. Canadian Journal of Nursing Research. <a href="https://doi.org/10.1177/08445621261463879" rel="noopener">doi.org/10.1177/08445621261463879</a><span class="genre">Article</span></div></li>
-      <li data-type="article"><span class="an">2026</span><div class="corps"><span class="titre">Nursing care omissions in postoperative pain management: Secondary analysis of a multimodal analgesia implementation study</span><span class="moi">Provost, J.</span>, Paul-Savoie, É., Bourdeau, É., Lapré, J., Duval-Martin, A.-L., Lafrenaye, S., Bourgault, P., Rochefort, C. et Gosselin, É. Pain Management Nursing, 27(5), 527-534. <a href="https://doi.org/10.1016/j.pmn.2026.04.017" rel="noopener">doi.org/10.1016/j.pmn.2026.04.017</a><span class="genre">Article</span></div></li>
-      <li data-type="article"><span class="an">2026</span><div class="corps"><span class="titre">The omission of nursing care in emergency departments: A conceptual analysis using Walker &amp; Avant's methodology</span><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. Journal of Advanced Nursing, 82(2), 1750-1759. <a href="https://doi.org/10.1111/jan.17017" rel="noopener">doi.org/10.1111/jan.17017</a><span class="genre"><span lang="fr">Article en libre accès</span><span lang="en">Open access article</span></span></div></li>
-      <li data-type="article"><span class="an">2025</span><div class="corps"><span class="titre">Canadian nurses' psychological health assessment and its determinants during the uncertain context of the early COVID-19 pandemic: A cross-sectional study</span>Benyamina Douma, N., Gosselin, É., Marceau, M., Mailhot-Bisson, D., Lavoie, S., <span class="moi">Provost, J.</span> et Ledoux, I. Policy, Politics, &amp; Nursing Practice, 26(3), 195-207. <a href="https://doi.org/10.1177/15271544251338813" rel="noopener">doi.org/10.1177/15271544251338813</a><span class="genre">Article</span></div></li>
-      <li data-type="article"><span class="an">2025</span><div class="corps"><span class="titre">Double (dual) sequential external defibrillation: A rapid review</span>Tessier, W., Blais, S., <span class="moi">Provost, J.</span> et Ouellet, S. Canadian Journal of Emergency Nursing, 48(2).<span class="genre">Article</span></div></li>
-      <li data-type="article"><span class="an">2025</span><div class="corps"><span class="titre">Omission des soins infirmiers : un défi critique pour la qualité des soins de santé</span><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. Perspective infirmière, 22(1).<span class="genre">Article</span></div></li>
-      <li data-type="article"><span class="an">2025</span><div class="corps"><span class="titre">Simulation in situ adaptée aux infirmières en soins d'urgence des centres hospitaliers ruraux : une recherche-action participative</span><span class="moi">Provost, J.</span>, Ledoux, I. et Lavoie, S. Soins d'urgence, revue de l'AIIUQ.<span class="genre">Article</span></div></li>
-      <li data-type="comm"><span class="an">2025</span><div class="corps"><span class="titre">L'équité et l'accessibilité aux soins en milieu rural : un enjeu pour la pratique infirmière</span><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. 92e Congrès de l'Acfas, École de technologie supérieure, Montréal, mai 2025.<span class="genre"><span lang="fr">Communication orale</span><span lang="en">Oral presentation</span></span></div></li>
-      <li data-type="affiche"><span class="an">2025</span><div class="corps"><span class="titre">L'omission des soins infirmiers en milieu rural : un défi méconnu aux urgences</span><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. 9e Congrès mondial du SIDIIEF, Lausanne, Suisse, juin 2025.<span class="genre"><span lang="fr">Affiche</span><span lang="en">Poster</span></span></div></li>
-      <li data-type="affiche"><span class="an">2025</span><div class="corps"><span class="titre">Understanding nursing care omissions and assessment tools in emergency departments: A comprehensive scoping review</span><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. International Forum on Quality and Safety in Healthcare, Utrecht, Pays-Bas, mai 2025.<span class="genre"><span lang="fr">Affiche</span><span lang="en">Poster</span></span></div></li>
-      <li data-type="article"><span class="an">2024</span><div class="corps"><span class="titre">Understanding nursing care omissions and assessment instruments in emergency departments: A scoping review protocol</span><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. Science of Nursing and Health Practices, 7(2). <a href="https://doi.org/10.62212/snahp.141" rel="noopener">doi.org/10.62212/snahp.141</a><span class="genre">Article</span></div></li>
-      <li data-type="article"><span class="an">2024</span><div class="corps"><span class="titre">Upgrading the skills of newly graduated rural nurses: Exploring the acceptability and feasibility of an intervention using immersive virtual reality</span>Lemée, M.-H., Lavoie, S., <span class="moi">Provost, J.</span> et Ledoux, I. Clinical Simulation in Nursing.<span class="genre">Article</span></div></li>
-      <li data-type="affiche"><span class="an">2024</span><div class="corps"><span class="titre">The omission of pain-related care: A secondary analysis of the MMA project</span><span class="moi">Provost, J.</span>, Bourdeau, É., Lapré, J., Duval-Martin, A.-L., Lafrenaye, S., Bourgault, P., Gosselin, É. et Rochefort, C. M. 10th World Congress of the ERAS Society, Espagne, septembre 2024.<span class="genre"><span lang="fr">Affiche</span><span lang="en">Poster</span></span></div></li>
-      <li data-type="affiche"><span class="an">2024</span><div class="corps"><span class="titre">Evaluating the acceptability and preliminary effects of virtual reality versus standardized patient simulations in nursing education</span><span class="moi">Provost, J.</span>, Gosselin, É., Carignan, H., Charette, S., Lavoie, P., Lemée, M.-H., Milhomme, D., Turgeon, N. et Ledoux, I. Conférence biennale de l'ACESI (CASN), Calgary, mai 2024.<span class="genre"><span lang="fr">Affiche, prix de la meilleure affiche scientifique</span><span lang="en">Poster, best scientific poster award</span></span></div></li>
-      <li data-type="article"><span class="an">2023</span><div class="corps"><span class="titre">Étude d'une formation pour les personnes infirmières ayant recours à la simulation visant à améliorer la qualité de la réanimation cardiorespiratoire</span><span class="moi">Provost, J.</span>, Ledoux, I., Lavoie, S., Marceau, M., Rodrigue, M.-C., Leblond, V. et Lemée, M.-H. Perspective infirmière.<span class="genre">Article</span></div></li>
-      <li data-type="comm"><span class="an">2022</span><div class="corps"><span class="titre">Instauration d'un partenariat en milieu rural : développement d'un programme de simulation mobile</span>Ledoux, I., Lavoie, S., Charette, M., Lavoie, P. et <span class="moi">Provost, J.</span> Congrès mondial du SIDIIEF, Ottawa, octobre 2022.<span class="genre"><span lang="fr">Atelier</span><span lang="en">Workshop</span></span></div></li>
-      <li data-type="article"><span class="an">2021</span><div class="corps"><span class="titre">La simulation in situ : une formule gagnante pour améliorer la sécurité des soins</span>Lemieux-Doutreloux, S., Blais, S., Gosselin, É., Marceau, M., Lavoie, P., Lapierre, A., <span class="moi">Provost, J.</span>, Couturier, C. et Ledoux, I. Perspective infirmière, 18(3), 46-52.<span class="genre">Article</span></div></li>
+    <p class="chapeau" lang="fr">Quelques articles récents, à lire en un clic. La page des publications rassemble les 45 articles, conférences et affiches.</p>
+    <p class="chapeau" lang="en">A few recent articles, one click away. The publications page gathers all 45 articles, talks and posters.</p>
+    <ul class="refs">
+      <li data-type="article"><span class="an">2026</span><div class="corps"><a class="titre" href="https://doi.org/10.1177/08445621261463879" rel="noopener">The characteristics of working overtime and their associations with nurse and patient outcomes: A systematic review of observational studies</a>Braiki, R., <span class="moi">Provost, J.</span> et Rochefort, C. M. Canadian Journal of Nursing Research. Publication anticipée en ligne.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1177/08445621261463879" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2026</span><div class="corps"><a class="titre" href="https://doi.org/10.1016/j.pmn.2026.04.017" rel="noopener">Nursing care omissions in postoperative pain management: Secondary analysis of a multimodal analgesia implementation study</a><span class="moi">Provost, J.</span>, Paul-Savoie, É., Bourdeau, É., Lapré, J., Duval-Martin, A.-L., Lafrenaye, S., Bourgault, P., Rochefort, C. et Gosselin, É. Pain Management Nursing, 27(5), 527–534.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1016/j.pmn.2026.04.017" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2026</span><div class="corps"><a class="titre" href="https://doi.org/10.1111/jan.17017" rel="noopener">The omission of nursing care in emergency departments: A conceptual analysis using Walker &amp; Avant's methodology</a><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. Journal of Advanced Nursing, 82(2), 1750–1759.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1111/jan.17017" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2025</span><div class="corps"><a class="titre" href="https://doi.org/10.1177/15271544251338813" rel="noopener">Canadian nurses' psychological health assessment and its determinants during the uncertain context of the early COVID-19 pandemic: A cross-sectional study</a>Benyamina Douma, N., Gosselin, É., Marceau, M., Mailhot-Bisson, D., Lavoie, S., <span class="moi">Provost, J.</span> et Ledoux, I. Policy, Politics, &amp; Nursing Practice, 26(3), 195–207.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1177/15271544251338813" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2025</span><div class="corps"><a class="titre" href="https://doi.org/10.17483/7q3m5727" rel="noopener">Exploring the acceptability, feasibility, and perceived effects of immersive virtual reality in comparison to standardized patient simulations in nursing education: A mixed-methods pilot study</a>Gosselin, É., <span class="moi">Provost, J.</span>, Carignan, H., Charette, S., Lavoie, P., Lemée, M.-H., Milhomme, D., Turgeon, N. et Ledoux, I. Quality Advancement in Nursing Education - Avancées en formation infirmière, 11(2), article 2.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.17483/7q3m5727" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2024</span><div class="corps"><a class="titre" href="https://doi.org/10.62212/snahp.141" rel="noopener">Understanding nursing care omissions and assessment instruments in emergency departments: A scoping review protocol</a><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. Science of Nursing and Health Practices / Science infirmière et pratiques en santé, 7(2), 109–117.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.62212/snahp.141" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
     </ul>
+    <p class="suite"><a class="bouton" href="publications.html"><span lang="fr">Voir toutes les publications</span><span lang="en">See all publications</span></a></p>
   </div>
 </section>
 
@@ -407,17 +219,62 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
   <div class="enveloppe">
     <h2 lang="fr">Parcours</h2>
     <h2 lang="en">Curriculum vitae</h2>
-    <p class="chapeau" lang="fr">Du génie informatique à l'urgence de Lac-Mégantic, puis à la recherche. Un parcours qui explique pourquoi je regarde les soins avec des yeux de clinicienne et de conceptrice de systèmes.</p>
-    <p class="chapeau" lang="en">From computer engineering to the Lac-Mégantic emergency department, then to research. A path that explains why I look at care as both a clinician and a systems designer.</p>
+    <p class="chapeau" lang="fr">Du génie informatique à l'urgence de Lac-Mégantic, puis à la recherche. Un parcours qui explique pourquoi je regarde la santé avec des yeux de clinicienne et de conceptrice de systèmes.</p>
+    <p class="chapeau" lang="en">From computer engineering to the Lac-Mégantic emergency department, then to research. A path that explains why I look at health as both a clinician and a systems designer.</p>
 
     <div class="colonnes">
       <div>
         <h3 lang="fr">Formation</h3><h3 lang="en">Education</h3>
         <ul class="fil">
-          <li class="actuel"><span class="quand"><span lang="fr">2023 à aujourd'hui</span><span lang="en">2023 to present</span></span><span class="quoi" lang="fr">Doctorat en recherche en sciences de la santé</span><span class="quoi" lang="en">PhD in Health Sciences Research</span><span class="ou" lang="fr">Université de Sherbrooke. Thèse « Mise en lumière de l'omission des soins infirmiers et de ses facteurs associés dans les urgences des centres hospitaliers ruraux », codirigée par Émilie Gosselin et Christian M. Rochefort.</span><span class="ou" lang="en">Université de Sherbrooke. Thesis on the omission of nursing care and its associated factors in rural hospital emergency departments, co-supervised by Émilie Gosselin and Christian M. Rochefort.</span></li>
-          <li><span class="quand">2021 - 2023</span><span class="quoi" lang="fr">Maîtrise en recherche en sciences de la santé</span><span class="quoi" lang="en">MSc in Health Sciences Research</span><span class="ou" lang="fr">Université de Sherbrooke. Simulation in situ pour les infirmières d'urgence d'un centre hospitalier rural, recherche-action participative codirigée par Isabelle Ledoux et Stephan Lavoie.</span><span class="ou" lang="en">Université de Sherbrooke. In situ simulation for emergency nurses in a rural hospital, participatory action research co-supervised by Isabelle Ledoux and Stephan Lavoie.</span></li>
+          <li class="actuel"><span class="quand">2023 - 2027</span><span class="quoi" lang="fr">Doctorat en recherche en sciences de la santé, profil sciences infirmières</span><span class="quoi" lang="en">PhD in Health Sciences Research, nursing stream</span><span class="ou" lang="fr">Université de Sherbrooke. Thèse « Mise en lumière de l'omission des soins infirmiers et de ses facteurs associés dans les urgences des centres hospitaliers ruraux », codirigée par Émilie Gosselin et Christian M. Rochefort.</span><span class="ou" lang="en">Université de Sherbrooke. Thesis on the omission of nursing care and its associated factors in rural hospital emergency departments, co-supervised by Émilie Gosselin and Christian M. Rochefort.</span></li>
+          <li><span class="quand">2021 - 2023</span><span class="quoi" lang="fr">Maîtrise en recherche en sciences de la santé, profil sciences infirmières</span><span class="quoi" lang="en">MSc in Health Sciences Research, nursing stream</span><span class="ou" lang="fr">Université de Sherbrooke. Simulation in situ pour les infirmières d'urgence d'un centre hospitalier rural, recherche-action participative codirigée par Isabelle Ledoux et Stephan Lavoie.</span><span class="ou" lang="en">Université de Sherbrooke. In situ simulation for emergency nurses in a rural hospital, participatory action research co-supervised by Isabelle Ledoux and Stephan Lavoie.</span></li>
           <li><span class="quand">2020</span><span class="quoi" lang="fr">Baccalauréat en sciences infirmières</span><span class="quoi" lang="en">Bachelor of Science in Nursing</span><span class="ou" lang="fr">Université de Sherbrooke, régime coopératif</span><span class="ou" lang="en">Université de Sherbrooke, co-op program</span></li>
           <li><span class="quand">2013 - 2015</span><span class="quoi" lang="fr">Études en génie informatique</span><span class="quoi" lang="en">Computer engineering studies</span><span class="ou" lang="fr">Université de Sherbrooke, régime coopératif</span><span class="ou" lang="en">Université de Sherbrooke, co-op program</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 lang="fr">Expérience</h3><h3 lang="en">Experience</h3>
+        <ul class="fil">
+          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2026</span><span lang="en">Since 2026</span></span><span class="quoi" lang="fr">Scientifique en chef</span><span class="quoi" lang="en">Chief Scientist</span><span class="ou" lang="fr">MRC du Granit, Lac-Mégantic, service à la communauté</span><span class="ou" lang="en">MRC du Granit, Lac-Mégantic, community service</span></li>
+          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2026</span><span lang="en">Since 2026</span></span><span class="quoi" lang="fr">Praticienne-chercheuse de milieu de pratique</span><span class="quoi" lang="en">Practitioner-researcher member</span><span class="ou" lang="fr">Institut universitaire de première ligne en santé et services sociaux (IUPLSSS)</span><span class="ou" lang="en">University Institute for Primary Health Care and Social Services (IUPLSSS)</span></li>
+          <li class="actuel"><span class="quand">2026</span><span class="quoi" lang="fr">Infirmière clinicienne</span><span class="quoi" lang="en">Nurse clinician</span><span class="ou">GMF Le Frontenac, Lac-Mégantic</span></li>
+          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2021</span><span lang="en">Since 2021</span></span><span class="quoi" lang="fr">Chargée de cours</span><span class="quoi" lang="en">Lecturer</span><span class="ou" lang="fr">École des sciences infirmières, Université de Sherbrooke</span><span class="ou" lang="en">School of Nursing, Université de Sherbrooke</span></li>
+          <li><span class="quand"><span lang="fr">Depuis 2019</span><span lang="en">Since 2019</span></span><span class="quoi" lang="fr">Assistante de recherche</span><span class="quoi" lang="en">Research assistant</span><span class="ou" lang="fr">École des sciences infirmières, Université de Sherbrooke</span><span class="ou" lang="en">School of Nursing, Université de Sherbrooke</span></li>
+          <li><span class="quand">2020 - 2022</span><span class="quoi" lang="fr">Infirmière clinicienne à l'urgence</span><span class="quoi" lang="en">Emergency department nurse clinician</span><span class="ou">CSSS du Granit, Lac-Mégantic</span></li>
+          <li><span class="quand">2013 - 2017</span><span class="quoi" lang="fr">Informatisation médicale et développement logiciel</span><span class="quoi" lang="en">Medical records computerization and software development</span><span class="ou">Clinique de santé Jacques-Cartier, Sherbrooke - Omnimed, Cookshire</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 lang="fr">Prix et distinctions</h3><h3 lang="en">Honours</h3>
+        <ul class="liste">
+          <li><span class="quand">2026</span><span lang="fr">Prix Bertrand-Dumais, pour l'excellence du dossier universitaire, les qualités humaines et sociales et la participation à la vie universitaire, FMSS, Université de Sherbrooke</span><span lang="en">Prix Bertrand-Dumais, for academic excellence, human and social qualities and contribution to university life, FMSS, Université de Sherbrooke</span></li>
+          <li><span class="quand">2026</span><span lang="fr">Prix Caducée, pour l'impact social sur la santé de la communauté de Lac-Mégantic</span><span lang="en">Prix Caducée, for social impact on the health of the Lac-Mégantic community</span></li>
+          <li><span class="quand">2025</span><span lang="fr">Mention d'honneur du doyen, Faculté de médecine et des sciences de la santé</span><span lang="en">Dean's Honourable Mention, Faculty of Medicine and Health Sciences</span></li>
+          <li><span class="quand">2025</span><span lang="fr">Prix étudiant pour une présentation en congrès, axe SPOP du Centre de recherche du CHUS</span><span lang="en">Student award for a conference presentation, SPOP axis, CHUS Research Centre</span></li>
+          <li><span class="quand">2024</span><span lang="fr">Prix de la meilleure affiche scientifique, CASN Biennial Canadian Nursing Education Conference</span><span lang="en">Best scientific poster award, CASN Biennial Canadian Nursing Education Conference</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 lang="fr">Bourses et financement</h3><h3 lang="en">Awards and funding</h3>
+        <ul class="liste">
+          <li><span class="quand">2026 - 2027</span><span lang="fr">Bourse doctorale, Instituts de recherche en santé du Canada (IRSC)</span><span lang="en">Doctoral award, Canadian Institutes of Health Research (CIHR)</span></li>
+          <li><span class="quand">2023 - 2026</span><span lang="fr">Bourse doctorale, Bureau de coopération interuniversitaire (BCI)</span><span lang="en">Doctoral scholarship, Bureau de coopération interuniversitaire (BCI)</span></li>
+          <li><span class="quand">2023 - 2026</span><span lang="fr">Bourse de recherche doctorale, laboratoire du Pr Christian Rochefort (IRSC)</span><span lang="en">Doctoral research stipend, Prof. Christian Rochefort's laboratory (CIHR)</span></li>
+          <li><span class="quand">2026</span><span lang="fr">Cochercheuse, concours de projets du Réseau québécois de la recherche sur la douleur, cartographie cognitive floue du contrôle de la douleur chez les athlètes d'endurance (É. Paul-Savoie, chercheuse principale)</span><span lang="en">Co-investigator, Quebec Pain Research Network project competition, fuzzy cognitive mapping of pain control in endurance athletes (É. Paul-Savoie, principal investigator)</span></li>
+          <li><span class="quand">2025</span><span lang="fr">Octroi de recherche, axe Santé, populations, organisations et pratiques, Centre de recherche du CHUS</span><span lang="en">Research grant, Health, Populations, Organizations and Practices axis, CHUS Research Centre</span></li>
+          <li><span class="quand">2023</span><span lang="fr">Bourse doctorale complémentaire, Réseau de recherche en interventions en sciences infirmières du Québec (RRISIQ)</span><span lang="en">Supplementary doctoral scholarship, Quebec Network on Nursing Intervention Research (RRISIQ)</span></li>
+          <li><span class="quand">2023</span><span lang="fr">Cochercheuse, subvention d'engagement partenarial du CRSH, programme de simulation mobile en milieu rural (I. Ledoux, chercheuse principale)</span><span lang="en">Co-applicant, SSHRC Partnership Engage Grant, mobile simulation program in rural settings (I. Ledoux, principal investigator)</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 lang="fr">Engagement</h3><h3 lang="en">Service</h3>
+        <ul class="liste">
+          <li><span class="quand"><span lang="fr">Depuis 2025</span><span lang="en">Since 2025</span></span><span lang="fr">Directrice, revue scientifique étudiante francophone SOMA</span><span lang="en">Director, SOMA francophone student scientific journal</span></li>
+          <li><span class="quand">2024 - 2026</span><span lang="fr">Présidente du comité exécutif étudiant, axe SPOP du Centre de recherche du CHUS</span><span lang="en">Chair of the student executive committee, SPOP axis, CHUS Research Centre</span></li>
+          <li><span class="quand">2023 - 2026</span><span lang="fr">Représentante étudiante et membre du comité de mentorat Comètes, Programme de recherche en sciences de la santé</span><span lang="en">Student representative and member of the Comètes mentoring committee, Health Sciences Research Program</span></li>
+          <li><span class="quand"><span lang="fr">Depuis 2020</span><span lang="en">Since 2020</span></span><span lang="fr">Membre de l'Ordre des infirmières et infirmiers du Québec et du comité de l'AQIISTI</span><span lang="en">Member of the Ordre des infirmières et infirmiers du Québec and of the AQIISTI committee</span></li>
         </ul>
         <h3 style="margin-top:2.75rem" lang="fr">Perfectionnement</h3><h3 style="margin-top:2.75rem" lang="en">Further training</h3>
         <ul class="liste">
@@ -427,57 +284,24 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
         </ul>
       </div>
       <div>
-        <h3 lang="fr">Expérience</h3><h3 lang="en">Experience</h3>
-        <ul class="fil">
-          <li class="actuel"><span class="quand"><span lang="fr">En cours</span><span lang="en">Current</span></span><span class="quoi" lang="fr">Scientifique en chef</span><span class="quoi" lang="en">Chief Scientist</span><span class="ou">MRC du Granit, Lac-Mégantic</span></li>
-          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2026</span><span lang="en">Since 2026</span></span><span class="quoi" lang="fr">Praticienne-chercheuse de milieu de pratique</span><span class="quoi" lang="en">Practitioner-researcher member</span><span class="ou" lang="fr">Institut universitaire de première ligne en santé et services sociaux (IUPLSSS)</span><span class="ou" lang="en">University Institute for Primary Health Care and Social Services (IUPLSSS)</span></li>
-          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2021</span><span lang="en">Since 2021</span></span><span class="quoi" lang="fr">Chargée de cours</span><span class="quoi" lang="en">Lecturer</span><span class="ou" lang="fr">École des sciences infirmières, Université de Sherbrooke</span><span class="ou" lang="en">School of Nursing, Université de Sherbrooke</span></li>
-          <li><span class="quand"><span lang="fr">Depuis 2019</span><span lang="en">Since 2019</span></span><span class="quoi" lang="fr">Assistante de recherche</span><span class="quoi" lang="en">Research assistant</span><span class="ou" lang="fr">École des sciences infirmières, Université de Sherbrooke</span><span class="ou" lang="en">School of Nursing, Université de Sherbrooke</span></li>
-          <li><span class="quand">2020 - 2022</span><span class="quoi" lang="fr">Infirmière clinicienne à l'urgence</span><span class="quoi" lang="en">Emergency department nurse clinician</span><span class="ou">CSSS du Granit, Lac-Mégantic</span></li>
-          <li><span class="quand">2014 - 2015</span><span class="quoi" lang="fr">Développeuse logicielle</span><span class="quoi" lang="en">Full-stack software developer</span><span class="ou">Omnimed, Cookshire</span></li>
-          <li><span class="quand">2013 - 2017</span><span class="quoi" lang="fr">Responsable de l'informatisation médicale</span><span class="quoi" lang="en">Lead, medical records computerization</span><span class="ou">Clinique de santé Jacques-Cartier, Sherbrooke</span></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 lang="fr">Bourses et financement</h3><h3 lang="en">Awards and funding</h3>
-        <ul class="liste">
-          <li><span class="quand">IRSC</span><span lang="fr">Bourse de recherche au doctorat, Instituts de recherche en santé du Canada</span><span lang="en">Doctoral research award, Canadian Institutes of Health Research</span></li>
-          <li><span class="quand">2023 - 2026</span><span lang="fr">Bourse doctorale, Bureau de coopération interuniversitaire</span><span lang="en">Doctoral scholarship, Bureau de coopération interuniversitaire</span></li>
-          <li><span class="quand">2025</span><span lang="fr">Octroi de recherche par concours, axe Santé, populations, organisations et pratiques, Centre de recherche du CHUS</span><span lang="en">Competitive research grant, Health, Populations, Organizations and Practices axis, CHUS Research Centre</span></li>
-          <li><span class="quand">2023</span><span lang="fr">Bourse doctorale complémentaire, Réseau de recherche en interventions en sciences infirmières du Québec (RRISIQ)</span><span lang="en">Supplementary doctoral scholarship, Quebec Network on Nursing Intervention Research (RRISIQ)</span></li>
-          <li><span class="quand">2023</span><span lang="fr">Cochercheuse, subvention d'engagement partenarial du CRSH pour un programme de simulation mobile en milieu rural (I. Ledoux, chercheuse principale)</span><span lang="en">Co-applicant, SSHRC Partnership Engage Grant for a mobile simulation program in rural settings (I. Ledoux, principal investigator)</span></li>
-        </ul>
-      </div>
-      <div>
-        <h3 lang="fr">Prix et engagement</h3><h3 lang="en">Honours and service</h3>
-        <ul class="liste">
-          <li><span class="quand">2025</span><span lang="fr">Prix étudiant pour une présentation en congrès international, axe SPOP du Centre de recherche du CHUS</span><span lang="en">Student award for an international conference presentation, SPOP axis, CHUS Research Centre</span></li>
-          <li><span class="quand">2024</span><span lang="fr">Prix de la meilleure affiche scientifique, conférence biennale de l'ACESI</span><span lang="en">Best scientific poster award, CASN Biennial Canadian Nursing Education Conference</span></li>
-          <li><span class="quand"><span lang="fr">Depuis 2024</span><span lang="en">Since 2024</span></span><span lang="fr">Présidente du comité exécutif étudiant, axe SPOP du Centre de recherche du CHUS</span><span lang="en">Chair of the student executive committee, SPOP axis, CHUS Research Centre</span></li>
-          <li><span class="quand"><span lang="fr">Depuis 2023</span><span lang="en">Since 2023</span></span><span lang="fr">Représentante étudiante et membre du comité de mentorat Comètes, Programme de recherche en sciences de la santé</span><span lang="en">Student representative and member of the Comètes mentoring committee, Health Sciences Research Program</span></li>
-          <li><span class="quand"><span lang="fr">Depuis 2020</span><span lang="en">Since 2020</span></span><span lang="fr">Membre de l'Ordre des infirmières et infirmiers du Québec et du comité de l'AQIISTI</span><span lang="en">Member of the Ordre des infirmières et infirmiers du Québec and of the AQIISTI committee</span></li>
+        <h3 lang="fr">Enseignement</h3><h3 lang="en">Teaching</h3>
+        <ul class="cours">
+          <li><b>MSP 146</b> <span lang="fr">Apprentissage par le service dans la communauté</span><span lang="en">Community service learning</span></li>
+          <li><b>PCI 621</b> <span lang="fr">Lecture critique de littérature scientifique, 2e cycle</span><span lang="en">Critical appraisal of scientific literature, graduate</span></li>
+          <li><b>FII 253</b> <span lang="fr">Séminaire en discipline infirmière</span><span lang="en">Seminar in the nursing discipline</span></li>
+          <li><b>FII 146</b> <span lang="fr">Éducation à la santé auprès des groupes</span><span lang="en">Health education with groups</span></li>
+          <li><b>BSI 329</b> <span lang="fr">Pratique infirmière éducative auprès des groupes</span><span lang="en">Educational nursing practice with groups</span></li>
+          <li><b>FII 151</b> <span lang="fr">Examen clinique</span><span lang="en">Clinical examination</span></li>
+          <li><b>BSI 271</b> <span lang="fr">Collaboration professionnelle et gestion d'équipes de soins</span><span lang="en">Professional collaboration and care team management</span></li>
+          <li><b>BSI 365</b> <span lang="fr">Activité d'intégration</span><span lang="en">Integration activity</span></li>
+          <li><b>FII 476</b> <span lang="fr">Stage de domaine en soins critiques</span><span lang="en">Critical care practicum</span></li>
         </ul>
       </div>
     </div>
 
-    <h3 style="font-size:1.5rem;margin:3.5rem 0 1.25rem" lang="fr">Enseignement à l'Université de Sherbrooke</h3>
-    <h3 style="font-size:1.5rem;margin:3.5rem 0 1.25rem" lang="en">Teaching at the Université de Sherbrooke</h3>
-    <ul class="cours">
-      <li><b>MSP 146</b> <span lang="fr">Apprentissage par le service dans la communauté, médecine</span><span lang="en">Community service learning, medicine</span></li>
-      <li><b>PCI 621</b> <span lang="fr">Lecture critique de littérature scientifique, 2e cycle</span><span lang="en">Critical appraisal of scientific literature, graduate</span></li>
-      <li><b>FII 253</b> <span lang="fr">Séminaire en discipline infirmière</span><span lang="en">Seminar in the nursing discipline</span></li>
-      <li><b>FII 146</b> <span lang="fr">Éducation à la santé auprès des groupes</span><span lang="en">Health education with groups</span></li>
-      <li><b>BSI 329</b> <span lang="fr">Pratique infirmière éducative auprès des groupes</span><span lang="en">Educational nursing practice with groups</span></li>
-      <li><b>FII 151</b> <span lang="fr">Examen clinique</span><span lang="en">Clinical examination</span></li>
-      <li><b>BSI 271</b> <span lang="fr">Collaboration professionnelle et gestion d'équipes de soins</span><span lang="en">Professional collaboration and care team management</span></li>
-      <li><b>BSI 365</b> <span lang="fr">Activité d'intégration</span><span lang="en">Integration activity</span></li>
-      <li><b>FII 476</b> <span lang="fr">Stage en soins critiques</span><span lang="en">Critical care practicum</span></li>
-    </ul>
-
     <div class="telecharger">
-      <p lang="fr">Le CV détaillé en format PDF (version de novembre 2025), avec les communications, les bourses et les charges de cours.</p>
-      <p lang="en">The detailed CV as a PDF (in French, November 2025 version), with presentations, funding and teaching loads.</p>
+      <p lang="fr">Le CV complet en format PDF, version 2026-2027, avec le détail des communications, des bourses et des charges de cours.</p>
+      <p lang="en">The full CV as a PDF (in French, 2026-2027 version), with details of presentations, funding and teaching loads.</p>
       <a class="bouton" href="files/CV_Josiane_Provost.pdf"><span lang="fr">Télécharger le CV (PDF)</span><span lang="en">Download the CV (PDF)</span></a>
     </div>
   </div>
@@ -512,73 +336,6 @@ footer .enveloppe{display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:spa
   </div>
 </footer>
 
-<script>
-(function(){
-  var racine=document.documentElement,bouton=document.getElementById('langue');
-  function regler(l){
-    racine.setAttribute('data-lang',l);racine.setAttribute('lang',l);
-    bouton.textContent=l==='fr'?'EN':'FR';
-    bouton.setAttribute('aria-label',l==='fr'?'Switch to English':'Passer au français');
-    document.title=l==='fr'?'Josiane Provost - Santé rurale, soins infirmiers et conseil scientifique':'Josiane Provost - Rural health, nursing care and science advice';
-  }
-  var choix=null;
-  try{choix=localStorage.getItem('langue')}catch(e){}
-  if(!choix){choix=/^fr/i.test(navigator.language||'fr')?'fr':'en'}
-  regler(choix);
-  bouton.addEventListener('click',function(){
-    var l=racine.getAttribute('data-lang')==='fr'?'en':'fr';regler(l);
-    try{localStorage.setItem('langue',l)}catch(e){}
-  });
-
-  /* Filtres des publications */
-  var boutons=document.querySelectorAll('.filtres button'),refs=document.querySelectorAll('#refs li');
-  boutons.forEach(function(b){b.addEventListener('click',function(){
-    var f=b.getAttribute('data-filtre');
-    boutons.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
-    refs.forEach(function(li){li.hidden=!(f==='tout'||li.getAttribute('data-type')===f)});
-  })});
-
-  /* Section active dans la navigation */
-  var liens=document.querySelectorAll('.liens a');
-  if('IntersectionObserver' in window){
-    var obs=new IntersectionObserver(function(es){es.forEach(function(e){
-      if(e.isIntersecting){liens.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')==='#'+e.target.id?'true':'false')})}
-    })},{rootMargin:'-40% 0px -55% 0px'});
-    document.querySelectorAll('main section[id]').forEach(function(s){obs.observe(s)});
-  }
-
-  /* Courbes de niveau de l'ouverture, calculées à partir d'un relief fictif */
-  var svg=document.getElementById('relief'),L=1600,H=900,nx=128,ny=72;
-  function h(i,j){var s=Math.sin(i*127.1+j*311.7)*43758.5453;return s-Math.floor(s)}
-  function lisse(t){return t*t*(3-2*t)}
-  function bruit(x,y){var i=Math.floor(x),j=Math.floor(y),u=lisse(x-i),v=lisse(y-j);
-    return (h(i,j)*(1-u)+h(i+1,j)*u)*(1-v)+(h(i,j+1)*(1-u)+h(i+1,j+1)*u)*v}
-  function alt(x,y){
-    var n=bruit(x*3.2,y*2.2)*.55+bruit(x*7,y*5+9)*.22+bruit(x*14+3,y*11)*.08;
-    var dx=x-.8,dy=(y-.5)*.62,sommet=Math.exp(-(dx*dx+dy*dy)*9)*.75;
-    var bx=x-.18,by=(y-1.05)*.6,butte=Math.exp(-(bx*bx+by*by)*14)*.35;
-    return n+sommet+butte}
-  var g=[],i,j;
-  for(j=0;j<=ny;j++){g[j]=[];for(i=0;i<=nx;i++){g[j][i]=alt(i/nx,j/ny)}}
-  function coupe(a,b,n){return (n-a)/(b-a)}
-  var niveaux=17,html='',k;
-  for(k=0;k<niveaux;k++){
-    var n=.22+k*.075,d='';
-    for(j=0;j<ny;j++){for(i=0;i<nx;i++){
-      var a=g[j][i],b=g[j][i+1],c=g[j+1][i+1],e=g[j+1][i],p=[];
-      if((a<n)!==(b<n))p.push([i+coupe(a,b,n),j]);
-      if((b<n)!==(c<n))p.push([i+1,j+coupe(b,c,n)]);
-      if((e<n)!==(c<n))p.push([i+coupe(e,c,n),j+1]);
-      if((a<n)!==(e<n))p.push([i,j+coupe(a,e,n)]);
-      for(var q=0;q+1<p.length;q+=2){
-        d+='M'+(p[q][0]/nx*L).toFixed(1)+' '+(p[q][1]/ny*H).toFixed(1)+'L'+(p[q+1][0]/nx*L).toFixed(1)+' '+(p[q+1][1]/ny*H).toFixed(1);
-      }
-    }}
-    var m=k%4===0;
-    html+='<path'+(m?' class="maitresse"':'')+' style="--o:'+(m?.26:.15)+';animation-delay:'+(k*70)+'ms" d="'+d+'"/>';
-  }
-  svg.innerHTML=html;
-})();
-</script>
+<script src="scripts.js"></script>
 </body>
 </html>
