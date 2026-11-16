@@ -1,157 +1,367 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" data-lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josiane Provost - PhD Candidate</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: #004d40;
-            color: white;
-            padding: 20px;
-            position: relative;
-            text-align: center;
-        }
-        header .content {
-            display: inline-block;
-            max-width: 80%;
-        }
-        .profile-photo {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 3px solid white;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-        }
-        nav a:hover {
-            background: #575757;
-            border-radius: 5px;
-        }
-        section {
-            padding: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: white;
-            margin-top: 20px;
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            color: white;
-            background: #004d40;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background: #00332e;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin: 10px 0;
-        }
-        ul li::before {
-            content: "•";
-            color: #004d40;
-            font-weight: bold;
-            display: inline-block;
-            width: 1em;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josiane Provost - Le territoire apprenant, santé rurale et conseil scientifique</title>
+<meta name="description" content="Josiane Provost, infirmière et chercheuse en sciences de la santé à l'Université de Sherbrooke, scientifique en chef de la MRC du Granit. Recherche sur la qualité des soins infirmiers en milieu rural, le numérique en santé et la gouvernance territoriale.">
+<meta property="og:title" content="Josiane Provost - Recherche en santé rurale">
+<meta property="og:description" content="Soins infirmiers en milieu rural, numérique en santé et conseil scientifique municipal.">
+<meta property="og:image" content="https://josianeprovost.ca/images/josiane-provost.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://josianeprovost.ca/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f3b33'/%3E%3Cpath d='M10 44c8-14 14-20 20-20s8 8 12 8 6-6 12-12' fill='none' stroke='%23e3b04b' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M10 54c10-10 16-14 22-14s10 6 22 0' fill='none' stroke='%23eef2ef' stroke-width='3' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="content">
-            <h1>Josiane Provost</h1>
-            <p>PhD Candidate in Health Sciences | Université de Sherbrooke</p>
-        </div>
-        <img src="images/profile.jpg" alt="Josiane Provost" class="profile-photo">
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#funding-awards">Funding & Awards</a>
-        <a href="#cv">Curriculum Vitae</a>
-        <a href="#contact">Contact</a>
+<body data-titre-fr="Josiane Provost - Le territoire apprenant, santé rurale et conseil scientifique" data-titre-en="Josiane Provost - The learning territory, rural health and science advice">
+<a class="saut" href="#contenu"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
+
+<header class="barre">
+  <div class="enveloppe">
+    <a class="marque" href="#haut" aria-label="Josiane Provost">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f3b33"/><path d="M10 44c8-14 14-20 20-20s8 8 12 8 6-6 12-12" fill="none" stroke="#e3b04b" stroke-width="4" stroke-linecap="round"/><path d="M10 54c10-10 16-14 22-14s10 6 22 0" fill="none" stroke="#eef2ef" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+      Josiane Provost
+    </a>
+    <nav class="liens" aria-label="Sections">
+      <a href="#recherche"><span lang="fr">Recherche</span><span lang="en">Research</span></a>
+      <a href="#applications"><span lang="fr">Applications</span><span lang="en">Apps</span></a>
+      <a href="#projets"><span lang="fr">Projets</span><span lang="en">Projects</span></a>
+      <a href="publications.html">Publications</a>
+      <a href="#parcours"><span lang="fr">Parcours</span><span lang="en">CV</span></a>
+      <a href="#contact">Contact</a>
     </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am Josiane Provost, a dedicated PhD candidate in Health Sciences at the Université de Sherbrooke. My research focuses on improving patient outcomes through innovative nursing practices in rural emergency departments.</p>
-    </section>
-    <section id="research">
-        <h2>Research Interests</h2>
-        <p>My research focuses on the omission of nursing care and its implications for patient and population health outcomes in rural and remote settings. Through a population health epidemiology lens, I aim to identify the prevalence, determinants, and consequences of nursing care omissions within rural emergency departments, where contextual and structural inequities shape care delivery. I am currently developing and validating the NURSOMIT instrument (Nursing Omission Measurement in Rural Emergency Tool) to measure and better understand patterns of omitted nursing care, inform workforce and policy interventions, and ultimately improve the accessibility and quality of emergency care in rural Canada.</p>
-        <h2>Intérêts de Recherche</h2>
-        <p>Mes travaux portent sur l’omission des soins infirmiers et ses répercussions sur la santé des patients et des populations en milieux ruraux et éloignés. En adoptant une perspective d’épidémiologie populationnelle, je cherche à déterminer la prévalence, les déterminants et les conséquences de l’omission des soins infirmiers dans les services d’urgence ruraux, où les iniquités contextuelles et structurelles influencent la prestation des soins. Je développe et valide actuellement l’instrument NURSOMIT (Nursing Omission Measurement in Rural Emergency Tool) afin de mesurer et mieux comprendre les profils d’omission des soins infirmiers, d’éclairer les interventions organisationnelles et politiques, et ultimement d’améliorer l’accessibilité et la qualité des soins d’urgence en région rurale canadienne.</p> 
-    </section>
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li>Provost, J., Paul-Savoie, E., Bourdeau, E., Lapré, J., Duval-Martin, A.-L., Lafrenaye, S., Bourgault, P., Rochefort, C., & Gosselin, E. (2025). <i>Nursing care omissions in postoperative pain management: Secondary analysis of a multimodal analgesia implementation study. [Manuscript submitted for publication]</i>
-            <li>Tessier, W., Blais, S., Provost, J., & Ouellet, S. (2025). <i>Double (dual) sequential external defibrillation: A rapid review. Canadian Journal of Emergency Nursing. Advance online publication.</i> 
-            <li>Provost, J., Gosselin, É., & Rochefort, C. M. (2025). <i>The omission of nursing care in emergency departments: A conceptual analysis using Walker & Avant’s methodology. Journal of Advanced Nursing. https://doi.org/10.1111/jan.17017</i>
-            <li>Provost, J., Gosselin, E., Rochefort, C. (2025). <i>Omission des soins infirmiers: un défi critique pour la qualité des soins de santé.</i> Perspective infirmière, 22(1).</li>
-            <li>Provost, J., Gosselin, E., & Rochefort, C. (2024). <i>Understanding Nursing Care Omissions and Assessment Instruments in Emergency Departments: A Scoping Review Protocol.</i> Science of Nursing and Health Practice.</li>
-            <li>Provost, J., Ledoux, I., Lavoie, S. (2024). <i>Simulation in situ adaptée aux infirmières en soins d'urgence des centres hospitaliers ruraux: une recherche-action participative.</i> Soins d’Urgence – AIIUQ.</li>
-            <li>Lemée, M.-H., Lavoie, S., Provost, J. et al. (2024). <i>Upgrading the Skills of Newly Graduated Rural Nurses Using Immersive Virtual Reality.</i> Clinical Simulation in Nursing.</li>
+    <button class="langue" type="button" id="langue" aria-label="Switch to English">EN</button>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="ouverture" id="haut">
+  <svg class="relief" id="relief" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+  <div class="enveloppe">
+    <div class="ouverture-texte">
+      <p class="qualite">
+        <span lang="fr">Infirmière, Ph. D. (c)</span><span lang="en">RN, PhD(c)</span>
+        <span lang="fr">Université de Sherbrooke</span><span lang="en">Université de Sherbrooke</span>
+        <span lang="fr">MRC du Granit</span><span lang="en">MRC du Granit</span>
+      </p>
+      <h1><span>Josiane</span><span>Provost</span></h1>
+      <p class="idee" lang="fr">Le territoire apprenant</p>
+      <p class="idee" lang="en">The learning territory</p>
+      <p class="amorce" lang="fr">J'explore comment un territoire peut apprendre de ses propres données pour agir sur la santé de sa population, bien avant l'hôpital.</p>
+      <p class="amorce" lang="en">I explore how a territory can learn from its own data to act on the health of its population, long before the hospital.</p>
+      <div class="actions">
+        <a class="bouton" href="#recherche"><span lang="fr">Découvrir le territoire apprenant</span><span lang="en">Discover the learning territory</span></a>
+        <a class="bouton clair" href="#parcours"><span lang="fr">Consulter le parcours</span><span lang="en">View the CV</span></a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="images/josiane-provost.jpg" width="900" height="829" alt="Portrait de Josiane Provost">
+    </div>
+  </div>
+</section>
+
+<aside class="avenir">
+  <div class="enveloppe">
+    <strong lang="fr">À venir, 27 novembre 2026</strong><strong lang="en">Upcoming, November 27, 2026</strong>
+    <span lang="fr">« Le milieu municipal, un acteur essentiel en santé », conférence avec la préfète Monique Phérivong Lenoir au colloque 2026 de l'Association médicale canadienne, à Québec.</span>
+    <span lang="en">“Le milieu municipal, un acteur essentiel en santé”, a talk with Prefect Monique Phérivong Lenoir at the Canadian Medical Association 2026 colloquium in Québec City.</span>
+  </div>
+</aside>
+
+<section class="section" id="apropos">
+  <div class="enveloppe">
+    <h2 lang="fr">Trois terrains, une même question</h2>
+    <h2 lang="en">Three settings, one question</h2>
+    <p class="chapeau" lang="fr">Comment offrir des soins et des services de qualité là où les ressources sont rares et les distances grandes? J'y travaille depuis l'urgence d'un hôpital de région, la salle de classe et la table des élus municipaux.</p>
+    <p class="chapeau" lang="en">How do we deliver quality care and services where resources are scarce and distances are long? I work on it from a rural emergency department, the classroom and the municipal council table.</p>
+    <div class="roles">
+      <div>
+        <h3 lang="fr">Chercheuse</h3><h3 lang="en">Researcher</h3>
+        <p class="lieu" lang="fr">Doctorat en recherche en sciences de la santé, Université de Sherbrooke</p>
+        <p class="lieu" lang="en">PhD in Health Sciences Research, Université de Sherbrooke</p>
+        <p lang="fr">Candidate au doctorat sous la codirection d'Émilie Gosselin et de Christian M. Rochefort. Ma thèse met en lumière l'omission des soins infirmiers et ses facteurs associés dans les urgences des centres hospitaliers ruraux.</p>
+        <p lang="en">Doctoral candidate co-supervised by Émilie Gosselin and Christian M. Rochefort. My thesis sheds light on the omission of nursing care and its associated factors in rural hospital emergency departments.</p>
+      </div>
+      <div>
+        <h3 lang="fr">Scientifique en chef</h3><h3 lang="en">Chief Scientist</h3>
+        <p class="lieu">MRC du Granit, Lac-Mégantic</p>
+        <p lang="fr">Je produis des avis scientifiques pour le conseil des maires d'un territoire rural de 19 municipalités, sur des sujets qui vont du transport collectif à la vitalité des écoles de village.</p>
+        <p lang="en">I prepare scientific advice for the council of mayors of a rural territory of 19 municipalities, on topics ranging from public transit to the vitality of village schools.</p>
+      </div>
+      <div>
+        <h3 lang="fr">Enseignante</h3><h3 lang="en">Educator</h3>
+        <p class="lieu" lang="fr">École des sciences infirmières, Université de Sherbrooke</p>
+        <p class="lieu" lang="en">School of Nursing, Université de Sherbrooke</p>
+        <p lang="fr">Chargée de cours depuis 2021 auprès des futures infirmières et des étudiants en médecine, avec un intérêt marqué pour la simulation, la collaboration professionnelle et l'apprentissage dans la communauté.</p>
+        <p lang="en">Lecturer since 2021 with nursing and medical students, with a strong interest in simulation, professional collaboration and community service learning.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section sombre" id="recherche">
+  <div class="enveloppe">
+    <h2 lang="fr">Le territoire apprenant</h2>
+    <h2 lang="en">The learning territory</h2>
+    <p class="chapeau" lang="fr">Transport, habitation, écoles, loisirs. Les municipalités prennent chaque jour des décisions qui façonnent la santé, souvent sans les nommer ainsi. Ma programmation de recherche explore comment un territoire peut observer ces effets, en tirer des connaissances et ajuster ses choix.</p>
+    <p class="chapeau" lang="en">Transit, housing, schools, recreation. Every day, municipalities make decisions that shape health, often without calling it that. My research program explores how a territory can observe these effects, learn from them and adjust its choices.</p>
+    <ol class="boucle">
+      <li><b lang="fr">Observer</b><b lang="en">Observe</b><span lang="fr">Rassembler les données du territoire, y compris celles qui dorment dans les municipalités.</span><span lang="en">Bring the territory's data together, including data that sits unused in municipalities.</span></li>
+      <li><b lang="fr">Comprendre</b><b lang="en">Understand</b><span lang="fr">Relier ces données aux déterminants sociaux de la santé, avec les gens du milieu.</span><span lang="en">Link these data to the social determinants of health, with local people.</span></li>
+      <li><b lang="fr">Décider</b><b lang="en">Decide</b><span lang="fr">Éclairer les choix des élus et des équipes municipales par des avis lisibles.</span><span lang="en">Inform the choices of elected officials and municipal teams with readable advice.</span></li>
+      <li><b lang="fr">Apprendre</b><b lang="en">Learn</b><span lang="fr">Suivre ce que ces choix changent pour la santé et l'accès aux soins, puis recommencer.</span><span lang="en">Follow what these choices change for health and access to care, then start again.</span></li>
+    </ol>
+    <p class="retour"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v5h-5"/></svg><span lang="fr">Une boucle plutôt qu'une ligne droite, menée en recherche-action avec le milieu.</span><span lang="en">A loop rather than a straight line, carried out as action research with the community.</span></p>
+    <div class="axes">
+      <article class="axe">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 30h9l4-12 6 22 5-16 3 6h13"/><circle cx="38" cy="12" r="5"/></svg>
+        <h3 lang="fr">Accessibilité et qualité des soins en milieu rural</h3>
+        <h3 lang="en">Access to and quality of care in rural settings</h3>
+        <p lang="fr">La pierre angulaire. Comprendre ce qui facilite ou freine l'accès à des soins de qualité loin des grands centres, dans le prolongement de mes travaux menés dans les urgences rurales.</p>
+        <p lang="en">The cornerstone. Understanding what helps or hinders access to quality care far from large centres, building on my work in rural emergency departments.</p>
+        <ul><li lang="fr">Urgences rurales</li><li lang="en">Rural emergency care</li><li lang="fr">Qualité des soins</li><li lang="en">Quality of care</li><li>NURSOMIT</li></ul>
+      </article>
+      <article class="axe">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 38c6-3 9-10 14-10s6 6 12 6 8-8 14-10"/><path d="M4 28c5-2 8-12 14-12s7 8 12 8 9-10 14-12"/><path d="M24 6v6M21 9h6"/></svg>
+        <h3 lang="fr">Municipalités et déterminants sociaux de la santé</h3>
+        <h3 lang="en">Municipalities and the social determinants of health</h3>
+        <p lang="fr">Explorer comment les décisions municipales agissent sur la santé en amont, avec les décideurs qui font de la santé sans toujours s'en rendre compte, et ce que l'infirmière en santé publique peut y apporter.</p>
+        <p lang="en">Exploring how municipal decisions act on health upstream, with decision-makers who do health work without always realizing it, and what public health nursing can bring to it.</p>
+        <ul><li lang="fr">Santé en amont</li><li lang="en">Upstream health</li><li lang="fr">Milieu municipal</li><li lang="en">Municipal sector</li><li lang="fr">Recherche-action</li><li lang="en">Action research</li></ul>
+      </article>
+      <article class="axe">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="10" cy="12" r="4"/><circle cx="38" cy="10" r="4"/><circle cx="24" cy="26" r="5"/><circle cx="10" cy="40" r="4"/><circle cx="38" cy="38" r="4"/><path d="M13 15l7 7M35 13l-7 9M13 37l7-7M35 35l-7-6"/></svg>
+        <h3 lang="fr">Données, gouvernance territoriale et numérique</h3>
+        <h3 lang="en">Data, territorial governance and digital transformation</h3>
+        <p lang="fr">Examiner comment un territoire peut garder la maîtrise de ses données et s'en servir pour décider, en mettant à profit une formation en génie informatique et en science des données.</p>
+        <p lang="en">Examining how a territory can keep control of its data and use it to decide, drawing on training in computer engineering and data science.</p>
+        <ul><li lang="fr">Souveraineté des données</li><li lang="en">Data sovereignty</li><li lang="fr">Tableaux de bord</li><li lang="en">Dashboards</li><li lang="fr">Ontologies</li><li lang="en">Ontologies</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section clair" id="applications">
+  <div class="enveloppe">
+    <h2 lang="fr">Applications à essayer</h2>
+    <h2 lang="en">Apps to try</h2>
+    <p class="chapeau" lang="fr">Deux versions miniatures d'outils que je conçois. Elles donnent un avant-goût; les versions complètes se bâtissent avec les milieux.</p>
+    <p class="chapeau" lang="en">Two miniature versions of tools I design. They give a taste; the full versions are built with the communities that use them.</p>
+    <div class="vitrines">
+      <a class="vitrine" href="apps/tableau-de-bord.html">
+        <svg viewBox="0 0 320 150" aria-hidden="true"><rect width="320" height="150" rx="14" fill="#eef2ef"/><g><rect x="16" y="16" width="38" height="38" rx="8" fill="#17524a"/><rect x="60" y="16" width="38" height="38" rx="8" fill="#8fb0a4"/><rect x="16" y="60" width="38" height="38" rx="8" fill="#c4d6cd"/><rect x="60" y="60" width="38" height="38" rx="8" fill="#0f3b33" stroke="#e3b04b" stroke-width="4"/><rect x="104" y="60" width="38" height="38" rx="8" fill="#5d897b"/><rect x="60" y="104" width="38" height="30" rx="8" fill="#a9c3b8"/></g><g fill="#17524a"><rect x="170" y="24" width="130" height="10" rx="5"/><rect x="170" y="46" width="104" height="10" rx="5"/><rect x="170" y="68" width="86" height="10" rx="5" fill="#8a6412"/><rect x="170" y="90" width="60" height="10" rx="5"/><rect x="170" y="112" width="38" height="10" rx="5"/></g></svg>
+        <h3 lang="fr">Tableau de bord territorial</h3><h3 lang="en">Territorial dashboard</h3>
+        <p lang="fr">Économie, aménagement, santé. Explorez les indicateurs d'une MRC fictive, municipalité par municipalité.</p>
+        <p lang="en">Economy, land use, health. Explore the indicators of a fictional regional county, one municipality at a time.</p>
+        <span class="bouton"><span lang="fr">Ouvrir le tableau de bord</span><span lang="en">Open the dashboard</span></span>
+      </a>
+      <a class="vitrine" href="apps/relais.html">
+        <svg viewBox="0 0 320 150" aria-hidden="true"><rect width="320" height="150" rx="14" fill="#eef2ef"/><g fill="#dfe7e2"><rect x="14" y="16" width="66" height="118" rx="10"/><rect x="90" y="16" width="66" height="118" rx="10"/><rect x="166" y="16" width="66" height="118" rx="10"/><rect x="242" y="16" width="66" height="118" rx="10"/></g><g fill="#fff" stroke="rgba(15,59,51,.25)"><rect x="20" y="30" width="54" height="30" rx="6"/><rect x="96" y="30" width="54" height="30" rx="6"/><rect x="96" y="66" width="54" height="30" rx="6"/><rect x="248" y="30" width="54" height="30" rx="6"/></g><path d="M76 45h18M152 81h90" stroke="#e3b04b" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 8"/><g fill="#e3b04b" stroke="#8a6412" stroke-width="2"><circle cx="130" cy="118" r="7"/><circle cx="150" cy="118" r="7"/><circle cx="170" cy="118" r="7" fill="none"/></g></svg>
+        <h3>RELAIS</h3>
+        <p lang="fr">Un jeu sérieux sur la collaboration interprofessionnelle. Six tours pour coordonner quatre unités de soins sans briser les relais.</p>
+        <p lang="en">A serious game on interprofessional collaboration. Six rounds to coordinate four care units without breaking the handoffs.</p>
+        <span class="bouton"><span lang="fr">Jouer à RELAIS</span><span lang="en">Play RELAIS</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projets">
+  <div class="enveloppe">
+    <h2 lang="fr">Projets en cours</h2>
+    <h2 lang="en">Current projects</h2>
+    <div class="projets">
+      <article class="projet">
+        <div>
+          <h3>NURSOMIT</h3>
+          <p class="nature" lang="fr">Projet doctoral, soutenu par une bourse doctorale des IRSC, le BCI et l'axe SPOP du Centre de recherche du CHUS</p>
+          <p class="nature" lang="en">Doctoral project, supported by a CIHR doctoral award, the BCI and the SPOP axis of the CHUS Research Centre</p>
+        </div>
+        <div>
+          <p lang="fr">Développement et validation d'un instrument de 47 énoncés qui mesure l'omission des soins infirmiers dans les urgences rurales, du triage à la salle de réanimation. Le contenu a été validé par une étude Delphi auprès de 14 experts et par des entrevues cognitives, puis mis à l'épreuve dans une enquête nationale auprès d'infirmières d'urgence.</p>
+          <p lang="en">Development and validation of a 47-item instrument measuring omitted nursing care in rural emergency departments, from triage to the resuscitation room. Content was validated through a Delphi study with 14 experts and cognitive interviews, then tested in a national survey of emergency nurses.</p>
+        </div>
+      </article>
+      <article class="projet">
+        <div>
+          <h3 lang="fr">Conseil scientifique de la MRC du Granit</h3>
+          <h3 lang="en">Science advice for the MRC du Granit</h3>
+          <p class="nature" lang="fr">Service à la collectivité, Lac-Mégantic</p>
+          <p class="nature" lang="en">Community service, Lac-Mégantic</p>
+        </div>
+        <div>
+          <p lang="fr">Un modèle de conseil scientifique de proximité auprès d'élus municipaux, présenté aux Entretiens Jacques Cartier 2026. Le mandat comprend la rédaction d'avis scientifiques et la conception d'un tableau de bord de gouvernance territoriale qui rassemble les données du territoire.</p>
+          <p lang="en">A model of local science advice for municipal elected officials, presented at the 2026 Entretiens Jacques Cartier. The mandate includes writing scientific advisory reports and building a territorial governance dashboard that brings the territory's data together.</p>
+        </div>
+      </article>
+      <article class="projet">
+        <div>
+          <h3>POPMO</h3>
+          <p class="nature" lang="fr">Ontologie biomédicale et jeu sérieux</p>
+          <p class="nature" lang="en">Biomedical ontology and serious game</p>
+        </div>
+        <div>
+          <p lang="fr">La Post-Operative Pain Management Ontology est un prototype d'ontologie de la gestion de la douleur postopératoire en orthopédie, conçu pour alimenter le jeu sérieux En-quête-Santé. Le cadre a été présenté en 2026 au 93e Congrès de l'Acfas et au congrès de la Société canadienne de la douleur.</p>
+          <p lang="en">The Post-Operative Pain Management Ontology is a prototype ontology of postoperative pain management in orthopaedics, designed to power the serious game En-quête-Santé. The framework was presented in 2026 at the 93rd Acfas Congress and at the Canadian Pain Society annual meeting.</p>
+        </div>
+      </article>
+      <article class="projet">
+        <div>
+          <h3>SOMA</h3>
+          <p class="nature" lang="fr">Revue scientifique étudiante francophone</p>
+          <p class="nature" lang="en">Francophone student scientific journal</p>
+        </div>
+        <div>
+          <p lang="fr">Cofondatrice et, depuis 2025, directrice de la revue scientifique étudiante francophone en sciences de la santé de l'Université de Sherbrooke, un lieu où la relève apprend à publier et à évaluer en français.</p>
+          <p lang="en">Co-founder and, since 2025, director of the francophone student scientific journal in health sciences at the Université de Sherbrooke, where emerging researchers learn to publish and to review in French.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section clair" id="publications">
+  <div class="enveloppe">
+    <h2>Publications</h2>
+    <p class="chapeau" lang="fr">Quelques articles récents, parmi 45 articles, conférences et affiches.</p>
+    <p class="chapeau" lang="en">A few recent articles, out of 45 articles, talks and posters.</p>
+    <ul class="refs">
+      <li data-type="article"><span class="an">2026</span><div class="corps"><a class="titre" href="https://doi.org/10.1177/08445621261463879" rel="noopener">The characteristics of working overtime and their associations with nurse and patient outcomes: A systematic review of observational studies</a>Braiki, R., <span class="moi">Provost, J.</span> et Rochefort, C. M. Canadian Journal of Nursing Research. Publication anticipée en ligne.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1177/08445621261463879" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2026</span><div class="corps"><a class="titre" href="https://doi.org/10.1016/j.pmn.2026.04.017" rel="noopener">Nursing care omissions in postoperative pain management: Secondary analysis of a multimodal analgesia implementation study</a><span class="moi">Provost, J.</span>, Paul-Savoie, É., Bourdeau, É., Lapré, J., Duval-Martin, A.-L., Lafrenaye, S., Bourgault, P., Rochefort, C. et Gosselin, É. Pain Management Nursing, 27(5), 527–534.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1016/j.pmn.2026.04.017" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2026</span><div class="corps"><a class="titre" href="https://doi.org/10.1111/jan.17017" rel="noopener">The omission of nursing care in emergency departments: A conceptual analysis using Walker &amp; Avant's methodology</a><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. M. Journal of Advanced Nursing, 82(2), 1750–1759.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1111/jan.17017" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2025</span><div class="corps"><a class="titre" href="https://doi.org/10.1177/15271544251338813" rel="noopener">Canadian nurses' psychological health assessment and its determinants during the uncertain context of the early COVID-19 pandemic: A cross-sectional study</a>Benyamina Douma, N., Gosselin, É., Marceau, M., Mailhot-Bisson, D., Lavoie, S., <span class="moi">Provost, J.</span> et Ledoux, I. Policy, Politics, &amp; Nursing Practice, 26(3), 195–207.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.1177/15271544251338813" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2025</span><div class="corps"><a class="titre" href="https://doi.org/10.17483/7q3m5727" rel="noopener">Exploring the acceptability, feasibility, and perceived effects of immersive virtual reality in comparison to standardized patient simulations in nursing education: A mixed-methods pilot study</a>Gosselin, É., <span class="moi">Provost, J.</span>, Carignan, H., Charette, S., Lavoie, P., Lemée, M.-H., Milhomme, D., Turgeon, N. et Ledoux, I. Quality Advancement in Nursing Education - Avancées en formation infirmière, 11(2), article 2.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.17483/7q3m5727" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+      <li data-type="article"><span class="an">2024</span><div class="corps"><a class="titre" href="https://doi.org/10.62212/snahp.141" rel="noopener">Understanding nursing care omissions and assessment instruments in emergency departments: A scoping review protocol</a><span class="moi">Provost, J.</span>, Gosselin, É. et Rochefort, C. Science of Nursing and Health Practices / Science infirmière et pratiques en santé, 7(2), 109–117.<br><span class="genre">Article</span><a class="lire" href="https://doi.org/10.62212/snahp.141" rel="noopener"><span lang="fr">Lire l'article</span><span lang="en">Read the article</span></a></div></li>
+    </ul>
+    <p class="suite"><a class="bouton" href="publications.html"><span lang="fr">Voir toutes les publications</span><span lang="en">See all publications</span></a></p>
+  </div>
+</section>
+
+<section class="section" id="parcours">
+  <div class="enveloppe">
+    <h2 lang="fr">Parcours</h2>
+    <h2 lang="en">Curriculum vitae</h2>
+    <p class="chapeau" lang="fr">Du génie informatique à l'urgence de Lac-Mégantic, puis à la recherche. Un parcours qui explique pourquoi je regarde la santé avec des yeux de clinicienne et de conceptrice de systèmes.</p>
+    <p class="chapeau" lang="en">From computer engineering to the Lac-Mégantic emergency department, then to research. A path that explains why I look at health as both a clinician and a systems designer.</p>
+
+    <div class="colonnes">
+      <div>
+        <h3 lang="fr">Formation</h3><h3 lang="en">Education</h3>
+        <ul class="fil">
+          <li class="actuel"><span class="quand">2023 - 2027</span><span class="quoi" lang="fr">Doctorat en recherche en sciences de la santé, profil sciences infirmières</span><span class="quoi" lang="en">PhD in Health Sciences Research, nursing stream</span><span class="ou" lang="fr">Université de Sherbrooke. Thèse « Mise en lumière de l'omission des soins infirmiers et de ses facteurs associés dans les urgences des centres hospitaliers ruraux », codirigée par Émilie Gosselin et Christian M. Rochefort.</span><span class="ou" lang="en">Université de Sherbrooke. Thesis on the omission of nursing care and its associated factors in rural hospital emergency departments, co-supervised by Émilie Gosselin and Christian M. Rochefort.</span></li>
+          <li><span class="quand">2021 - 2023</span><span class="quoi" lang="fr">Maîtrise en recherche en sciences de la santé, profil sciences infirmières</span><span class="quoi" lang="en">MSc in Health Sciences Research, nursing stream</span><span class="ou" lang="fr">Université de Sherbrooke. Simulation in situ pour les infirmières d'urgence d'un centre hospitalier rural, recherche-action participative codirigée par Isabelle Ledoux et Stephan Lavoie.</span><span class="ou" lang="en">Université de Sherbrooke. In situ simulation for emergency nurses in a rural hospital, participatory action research co-supervised by Isabelle Ledoux and Stephan Lavoie.</span></li>
+          <li><span class="quand">2020</span><span class="quoi" lang="fr">Baccalauréat en sciences infirmières</span><span class="quoi" lang="en">Bachelor of Science in Nursing</span><span class="ou" lang="fr">Université de Sherbrooke, régime coopératif</span><span class="ou" lang="en">Université de Sherbrooke, co-op program</span></li>
+          <li><span class="quand">2013 - 2015</span><span class="quoi" lang="fr">Études en génie informatique</span><span class="quoi" lang="en">Computer engineering studies</span><span class="ou" lang="fr">Université de Sherbrooke, régime coopératif</span><span class="ou" lang="en">Université de Sherbrooke, co-op program</span></li>
         </ul>
-    </section>
-    <section id="funding-awards">
-        <h2>Funding & Awards</h2>
-        <ul>
-            <li>2023-2026: Doctoral Scholarship, Bureau de Coopération Interuniversitaire ($31,200).</li>
-            <li>2024: Best Poster Award, CASN Biennial Canadian Nursing Education Conference.</li>
-            <li>2024: Additional Doctoral Scholarship, CIUSSS-Estrie CHUS ($5,000).</li>
-            <li>2023: Complementary Doctoral Scholarship, RRISIQ ($7,800).</li>
-            <li>2023: Research Grant, CIHR - Lab of Pr. Christian Rochefort ($21,000).</li>
+      </div>
+      <div>
+        <h3 lang="fr">Expérience</h3><h3 lang="en">Experience</h3>
+        <ul class="fil">
+          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2026</span><span lang="en">Since 2026</span></span><span class="quoi" lang="fr">Scientifique en chef</span><span class="quoi" lang="en">Chief Scientist</span><span class="ou" lang="fr">MRC du Granit, Lac-Mégantic, service à la communauté</span><span class="ou" lang="en">MRC du Granit, Lac-Mégantic, community service</span></li>
+          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2026</span><span lang="en">Since 2026</span></span><span class="quoi" lang="fr">Praticienne-chercheuse de milieu de pratique</span><span class="quoi" lang="en">Practitioner-researcher member</span><span class="ou" lang="fr">Institut universitaire de première ligne en santé et services sociaux (IUPLSSS)</span><span class="ou" lang="en">University Institute for Primary Health Care and Social Services (IUPLSSS)</span></li>
+          <li class="actuel"><span class="quand">2026</span><span class="quoi" lang="fr">Infirmière clinicienne</span><span class="quoi" lang="en">Nurse clinician</span><span class="ou">GMF Le Frontenac, Lac-Mégantic</span></li>
+          <li class="actuel"><span class="quand"><span lang="fr">Depuis 2021</span><span lang="en">Since 2021</span></span><span class="quoi" lang="fr">Chargée de cours</span><span class="quoi" lang="en">Lecturer</span><span class="ou" lang="fr">École des sciences infirmières, Université de Sherbrooke</span><span class="ou" lang="en">School of Nursing, Université de Sherbrooke</span></li>
+          <li><span class="quand"><span lang="fr">Depuis 2019</span><span lang="en">Since 2019</span></span><span class="quoi" lang="fr">Assistante de recherche</span><span class="quoi" lang="en">Research assistant</span><span class="ou" lang="fr">École des sciences infirmières, Université de Sherbrooke</span><span class="ou" lang="en">School of Nursing, Université de Sherbrooke</span></li>
+          <li><span class="quand">2020 - 2022</span><span class="quoi" lang="fr">Infirmière clinicienne à l'urgence</span><span class="quoi" lang="en">Emergency department nurse clinician</span><span class="ou">CSSS du Granit, Lac-Mégantic</span></li>
+          <li><span class="quand">2013 - 2017</span><span class="quoi" lang="fr">Informatisation médicale et développement logiciel</span><span class="quoi" lang="en">Medical records computerization and software development</span><span class="ou">Clinique de santé Jacques-Cartier, Sherbrooke - Omnimed, Cookshire</span></li>
         </ul>
-    </section>
-    <section id="cv">
-        <h2>Curriculum Vitae</h2>
-        <p>View or download my CV below:</p>
-        <a href="files/CV_Josiane_Provost.pdf" class="button" download>Download CV</a>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:Josiane.provost@usherbrooke.ca">Josiane.provost@usherbrooke.ca</a></p>
-        <p>Find me online:</p>
-        <ul>
-            <li><a href="https://orcid.org/0000-0001-9698-2990" target="_blank">ORCID</a></li>
-            <li><a href="https://www.linkedin.com/in/josiane-provost/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/JosianeP" target="_blank">GitHub</a></li>
+      </div>
+
+      <div>
+        <h3 lang="fr">Prix et distinctions</h3><h3 lang="en">Honours</h3>
+        <ul class="liste">
+          <li><span class="quand">2026</span><span lang="fr">Prix Bertrand-Dumais, pour l'excellence du dossier universitaire, les qualités humaines et sociales et la participation à la vie universitaire, FMSS, Université de Sherbrooke</span><span lang="en">Prix Bertrand-Dumais, for academic excellence, human and social qualities and contribution to university life, FMSS, Université de Sherbrooke</span></li>
+          <li><span class="quand">2026</span><span lang="fr">Prix Caducée, pour l'impact social sur la santé de la communauté de Lac-Mégantic</span><span lang="en">Prix Caducée, for social impact on the health of the Lac-Mégantic community</span></li>
+          <li><span class="quand">2025</span><span lang="fr">Mention d'honneur du doyen, Faculté de médecine et des sciences de la santé</span><span lang="en">Dean's Honourable Mention, Faculty of Medicine and Health Sciences</span></li>
+          <li><span class="quand">2025</span><span lang="fr">Prix étudiant pour une présentation en congrès, axe SPOP du Centre de recherche du CHUS</span><span lang="en">Student award for a conference presentation, SPOP axis, CHUS Research Centre</span></li>
+          <li><span class="quand">2024</span><span lang="fr">Prix de la meilleure affiche scientifique, CASN Biennial Canadian Nursing Education Conference</span><span lang="en">Best scientific poster award, CASN Biennial Canadian Nursing Education Conference</span></li>
         </ul>
-    </section>
-    <footer>
-        <p>&copy; 2026 Josiane Provost. All rights reserved.</p>
-    </footer>
+      </div>
+      <div>
+        <h3 lang="fr">Bourses et financement</h3><h3 lang="en">Awards and funding</h3>
+        <ul class="liste">
+          <li><span class="quand">2026 - 2027</span><span lang="fr">Bourse doctorale, Instituts de recherche en santé du Canada (IRSC)</span><span lang="en">Doctoral award, Canadian Institutes of Health Research (CIHR)</span></li>
+          <li><span class="quand">2023 - 2026</span><span lang="fr">Bourse doctorale, Bureau de coopération interuniversitaire (BCI)</span><span lang="en">Doctoral scholarship, Bureau de coopération interuniversitaire (BCI)</span></li>
+          <li><span class="quand">2023 - 2026</span><span lang="fr">Bourse de recherche doctorale, laboratoire du Pr Christian Rochefort (IRSC)</span><span lang="en">Doctoral research stipend, Prof. Christian Rochefort's laboratory (CIHR)</span></li>
+          <li><span class="quand">2026</span><span lang="fr">Cochercheuse, concours de projets du Réseau québécois de la recherche sur la douleur, cartographie cognitive floue du contrôle de la douleur chez les athlètes d'endurance (É. Paul-Savoie, chercheuse principale)</span><span lang="en">Co-investigator, Quebec Pain Research Network project competition, fuzzy cognitive mapping of pain control in endurance athletes (É. Paul-Savoie, principal investigator)</span></li>
+          <li><span class="quand">2025</span><span lang="fr">Octroi de recherche, axe Santé, populations, organisations et pratiques, Centre de recherche du CHUS</span><span lang="en">Research grant, Health, Populations, Organizations and Practices axis, CHUS Research Centre</span></li>
+          <li><span class="quand">2023</span><span lang="fr">Bourse doctorale complémentaire, Réseau de recherche en interventions en sciences infirmières du Québec (RRISIQ)</span><span lang="en">Supplementary doctoral scholarship, Quebec Network on Nursing Intervention Research (RRISIQ)</span></li>
+          <li><span class="quand">2023</span><span lang="fr">Cochercheuse, subvention d'engagement partenarial du CRSH, programme de simulation mobile en milieu rural (I. Ledoux, chercheuse principale)</span><span lang="en">Co-applicant, SSHRC Partnership Engage Grant, mobile simulation program in rural settings (I. Ledoux, principal investigator)</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 lang="fr">Engagement</h3><h3 lang="en">Service</h3>
+        <ul class="liste">
+          <li><span class="quand"><span lang="fr">Depuis 2025</span><span lang="en">Since 2025</span></span><span lang="fr">Directrice, revue scientifique étudiante francophone SOMA</span><span lang="en">Director, SOMA francophone student scientific journal</span></li>
+          <li><span class="quand">2024 - 2026</span><span lang="fr">Présidente du comité exécutif étudiant, axe SPOP du Centre de recherche du CHUS</span><span lang="en">Chair of the student executive committee, SPOP axis, CHUS Research Centre</span></li>
+          <li><span class="quand">2023 - 2026</span><span lang="fr">Représentante étudiante et membre du comité de mentorat Comètes, Programme de recherche en sciences de la santé</span><span lang="en">Student representative and member of the Comètes mentoring committee, Health Sciences Research Program</span></li>
+          <li><span class="quand"><span lang="fr">Depuis 2020</span><span lang="en">Since 2020</span></span><span lang="fr">Membre de l'Ordre des infirmières et infirmiers du Québec et du comité de l'AQIISTI</span><span lang="en">Member of the Ordre des infirmières et infirmiers du Québec and of the AQIISTI committee</span></li>
+        </ul>
+        <h3 style="margin-top:2.75rem" lang="fr">Perfectionnement</h3><h3 style="margin-top:2.75rem" lang="en">Further training</h3>
+        <ul class="liste">
+          <li><span class="quand">2024</span><span lang="fr">Certificat professionnel en science des données, IBM</span><span lang="en">Data Science Professional Certificate, IBM</span></li>
+          <li><span class="quand">2024</span><span lang="fr">École d'été interdisciplinaire en informatique de la santé, Université de Sherbrooke</span><span lang="en">Interdisciplinary summer school in health informatics, Université de Sherbrooke</span></li>
+          <li><span class="quand">2022</span><span lang="fr">Certificat Essentials in Simulation, Harvard University</span><span lang="en">Essentials in Simulation certificate, Harvard University</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 lang="fr">Enseignement</h3><h3 lang="en">Teaching</h3>
+        <ul class="cours">
+          <li><b>MSP 146</b> <span lang="fr">Apprentissage par le service dans la communauté</span><span lang="en">Community service learning</span></li>
+          <li><b>PCI 621</b> <span lang="fr">Lecture critique de littérature scientifique, 2e cycle</span><span lang="en">Critical appraisal of scientific literature, graduate</span></li>
+          <li><b>FII 253</b> <span lang="fr">Séminaire en discipline infirmière</span><span lang="en">Seminar in the nursing discipline</span></li>
+          <li><b>FII 146</b> <span lang="fr">Éducation à la santé auprès des groupes</span><span lang="en">Health education with groups</span></li>
+          <li><b>BSI 329</b> <span lang="fr">Pratique infirmière éducative auprès des groupes</span><span lang="en">Educational nursing practice with groups</span></li>
+          <li><b>FII 151</b> <span lang="fr">Examen clinique</span><span lang="en">Clinical examination</span></li>
+          <li><b>BSI 271</b> <span lang="fr">Collaboration professionnelle et gestion d'équipes de soins</span><span lang="en">Professional collaboration and care team management</span></li>
+          <li><b>BSI 365</b> <span lang="fr">Activité d'intégration</span><span lang="en">Integration activity</span></li>
+          <li><b>FII 476</b> <span lang="fr">Stage de domaine en soins critiques</span><span lang="en">Critical care practicum</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="telecharger">
+      <p lang="fr">Le CV complet en format PDF, version 2026-2027, avec le détail des communications, des bourses et des charges de cours.</p>
+      <p lang="en">The full CV as a PDF (in French, 2026-2027 version), with details of presentations, funding and teaching loads.</p>
+      <a class="bouton" href="files/CV_Josiane_Provost.pdf"><span lang="fr">Télécharger le CV (PDF)</span><span lang="en">Download the CV (PDF)</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section sombre" id="contact">
+  <div class="enveloppe contact">
+    <div>
+      <h2 lang="fr">Travaillons ensemble</h2>
+      <h2 lang="en">Let's work together</h2>
+    </div>
+    <div>
+      <p lang="fr">Collaborations de recherche, conférences, projets étudiants ou besoins d'un milieu rural. Écrivez-moi.</p>
+      <p lang="en">Research collaborations, speaking invitations, student projects or the needs of a rural community. Write to me.</p>
+      <a class="courriel" href="mailto:josiane.provost@usherbrooke.ca">josiane.provost@usherbrooke.ca</a>
+      <div class="reseaux">
+        <a href="https://orcid.org/0000-0001-9698-2990" rel="noopener">ORCID</a>
+        <a href="https://www.linkedin.com/in/josiane-provost/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/JosianeP" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="enveloppe">
+    <span>© 2026 Josiane Provost</span>
+    <span lang="fr">Lac-Mégantic et Sherbrooke, Québec. Mis à jour en novembre 2026.</span>
+    <span lang="en">Lac-Mégantic and Sherbrooke, Québec. Updated November 2026.</span>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
 </body>
 </html>

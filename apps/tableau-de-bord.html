@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tableau de bord territorial, exemple - Josiane Provost</title>
+<meta name="description" content="Mini-exemple interactif d'un tableau de bord territorial, avec des données fictives.">
+<meta property="og:title" content="Josiane Provost - Recherche en santé rurale">
+<meta property="og:description" content="Soins infirmiers en milieu rural, numérique en santé et conseil scientifique municipal.">
+<meta property="og:image" content="https://josianeprovost.ca/images/josiane-provost.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://josianeprovost.ca/apps/tableau-de-bord.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f3b33'/%3E%3Cpath d='M10 44c8-14 14-20 20-20s8 8 12 8 6-6 12-12' fill='none' stroke='%23e3b04b' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M10 54c10-10 16-14 22-14s10 6 22 0' fill='none' stroke='%23eef2ef' stroke-width='3' stroke-linecap='round' opacity='.7'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="apps.css">
+</head>
+<body data-titre-fr="Tableau de bord territorial, exemple - Josiane Provost" data-titre-en="Territorial dashboard, example - Josiane Provost">
+<a class="saut" href="#contenu"><span lang="fr">Aller au contenu</span><span lang="en">Skip to content</span></a>
+
+<header class="barre">
+  <div class="enveloppe">
+    <a class="marque" href="../index.html" aria-label="Josiane Provost">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0f3b33"/><path d="M10 44c8-14 14-20 20-20s8 8 12 8 6-6 12-12" fill="none" stroke="#e3b04b" stroke-width="4" stroke-linecap="round"/><path d="M10 54c10-10 16-14 22-14s10 6 22 0" fill="none" stroke="#eef2ef" stroke-width="3" stroke-linecap="round" opacity=".7"/></svg>
+      Josiane Provost
+    </a>
+    <nav class="liens" aria-label="Sections">
+      <a href="../index.html#recherche"><span lang="fr">Recherche</span><span lang="en">Research</span></a>
+      <a href="../index.html#applications" aria-current="true"><span lang="fr">Applications</span><span lang="en">Apps</span></a>
+      <a href="../index.html#projets"><span lang="fr">Projets</span><span lang="en">Projects</span></a>
+      <a href="../publications.html">Publications</a>
+      <a href="../index.html#parcours"><span lang="fr">Parcours</span><span lang="en">CV</span></a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <button class="langue" type="button" id="langue" aria-label="Switch to English">EN</button>
+  </div>
+</header>
+
+<main id="contenu">
+<section class="app-entete"><div class="enveloppe">
+  <h1 lang="fr">Tableau de bord territorial</h1><h1 lang="en">Territorial dashboard</h1>
+  <p lang="fr">Un avant-goût de ce qu'un tableau de bord peut offrir aux élus et aux équipes d'une MRC.</p>
+  <p lang="en">A taste of what a dashboard can offer the elected officials and teams of a regional county municipality.</p>
+  <span class="avis" lang="fr">Territoire et données entièrement fictifs. Dans une version réelle, chaque valeur porte sa source et la mention « réel » ou « estimé ».</span>
+  <span class="avis" lang="en">Territory and data are entirely fictional. In a real version, each value carries its source and a “real” or “estimated” tag.</span>
+</div></section>
+<section class="app"><div class="enveloppe">
+  <div class="onglets" id="piliers" role="group" aria-label="Piliers"></div>
+  <div class="choix" id="indics" role="group" aria-label="Indicateurs"></div>
+  <div class="panneaux">
+    <div class="carte-app"><h2 lang="fr">MRC des Hautes-Collines</h2><h2 lang="en">MRC des Hautes-Collines</h2><p class="sous" id="leg"></p><svg class="tuiles" id="tuiles" viewBox="0 0 440 330" role="group" aria-label="Carte schématique"></svg></div>
+    <div class="carte-app"><h2 id="titre-barres"></h2><p class="sous" lang="fr">Classement des huit municipalités</p><p class="sous" lang="en">Ranking of the eight municipalities</p><div class="barres" id="barres"></div></div>
+    <div class="carte-app fiche" id="fiche" aria-live="polite"></div>
+  </div>
+    <div class="invitation">
+      <p lang="fr">Votre territoire aimerait un outil semblable, bâti sur ses propres données? Parlons-en.</p>
+      <p lang="en">Would your territory like a similar tool, built on its own data? Let's talk.</p>
+      <a class="bouton" href="mailto:josiane.provost@usherbrooke.ca?subject=Tableau%20de%20bord%20territorial"><span lang="fr">M'écrire</span><span lang="en">Write to me</span></a>
+    </div>
+</div></section>
+</main>
+
+<footer>
+  <div class="enveloppe">
+    <span>© 2026 Josiane Provost</span>
+    <span lang="fr">Lac-Mégantic et Sherbrooke, Québec. Mis à jour en novembre 2026.</span>
+    <span lang="en">Lac-Mégantic and Sherbrooke, Québec. Updated November 2026.</span>
+  </div>
+</footer>
+
+<script src="../scripts.js"></script>
+<script>
+(function(){
+  var root=document.documentElement;function L(fr,en){return root.getAttribute('data-lang')==='en'?en:fr}
+  var M=[
+   {n:'Saint-Aimé-du-Lac',c:1,r:0,pop:5840,emp:71,ent:312,loc:0.8,gar:38,urg:4,ain:24},
+   {n:'Val-Boisé',c:2,r:0,pop:1320,emp:44,ent:58,loc:1.9,gar:22,urg:19,ain:29},
+   {n:'Lac-aux-Pins',c:0,r:1,pop:860,emp:31,ent:41,loc:3.4,gar:0,urg:34,ain:36},
+   {n:'Sainte-Rose-des-Monts',c:1,r:1,pop:2110,emp:52,ent:97,loc:1.2,gar:31,urg:12,ain:27},
+   {n:'Rivière-Claire',c:2,r:1,pop:1675,emp:58,ent:84,loc:2.1,gar:27,urg:16,ain:25},
+   {n:'Notre-Dame-des-Érables',c:3,r:1,pop:540,emp:27,ent:19,loc:4.6,gar:0,urg:41,ain:39},
+   {n:'Mont-Bleu',c:1,r:2,pop:980,emp:63,ent:66,loc:0.5,gar:18,urg:28,ain:21},
+   {n:'Baie-Tranquille',c:2,r:2,pop:1240,emp:36,ent:49,loc:2.8,gar:14,urg:23,ain:33}];
+  var P=[
+   {k:'eco',fr:'Économie',en:'Economy',i:[{k:'emp',fr:'Emplois locaux pour 100 personnes de 15 à 64 ans',en:'Local jobs per 100 people aged 15 to 64',u:''},{k:'ent',fr:'Entreprises actives',en:'Active businesses',u:''}]},
+   {k:'ame',fr:'Aménagement',en:'Land use',i:[{k:'loc',fr:"Taux d'inoccupation des logements locatifs",en:'Rental vacancy rate',u:' %'},{k:'gar',fr:'Places en garderie pour 100 enfants de 0 à 4 ans',en:'Childcare spaces per 100 children aged 0 to 4',u:''}]},
+   {k:'san',fr:'Santé',en:'Health',i:[{k:'urg',fr:"Minutes de route jusqu'à l'urgence",en:'Driving minutes to the emergency department',u:' min'},{k:'ain',fr:'Part des 65 ans et plus',en:'Share aged 65 and over',u:' %'}]}];
+  var pil=0,ind=0,sel=0;
+  function fmt(v){return (Math.round(v*10)/10).toLocaleString(L('fr-CA','en-CA'))}
+  function med(k){var a=M.map(function(m){return m[k]}).sort(function(x,y){return x-y});return (a[3]+a[4])/2}
+  function coul(t){var a=[223,231,226],b=[15,59,51];return 'rgb('+a.map(function(x,i){return Math.round(x+(b[i]-x)*t)}).join(',')+')'}
+  function rendu(){
+    var I=P[pil].i[ind],k=I.k,vals=M.map(function(m){return m[k]}),mx=Math.max.apply(null,vals);
+    document.getElementById('piliers').innerHTML=P.map(function(p,i){return '<button type="button" data-p="'+i+'" aria-pressed="'+(i===pil)+'">'+L(p.fr,p.en)+'</button>'}).join('');
+    document.getElementById('indics').innerHTML=P[pil].i.map(function(x,i){return '<button type="button" data-i="'+i+'" aria-pressed="'+(i===ind)+'">'+L(x.fr,x.en)+'</button>'}).join('');
+    document.getElementById('leg').textContent=L('Carte schématique, du plus pâle (valeur faible) au plus foncé (valeur élevée)','Schematic map, from palest (low value) to darkest (high value)');
+    document.getElementById('titre-barres').textContent=L(I.fr,I.en);
+    var s='';M.forEach(function(m,i){var t=mx?m[k]/mx:0,x=8+m.c*108,y=8+m.r*106,cl=t>.5?'#fff':'#0f3b33',mots=m.n.split('-'),l1=mots.slice(0,Math.ceil(mots.length/2)).join('-'),l2=mots.slice(Math.ceil(mots.length/2)).join('-');
+      s+='<g data-m="'+i+'" tabindex="0" role="button" aria-label="'+m.n+'"><rect x="'+x+'" y="'+y+'" width="100" height="98" rx="16" fill="'+coul(.08+t*.92)+'" stroke="'+(i===sel?'#e3b04b':'rgba(15,59,51,.16)')+'" stroke-width="'+(i===sel?5:1)+'"/><text x="'+(x+50)+'" y="'+(y+44)+'" text-anchor="middle" font-size="26" font-weight="700" fill="'+cl+'">'+fmt(m[k])+'</text><text x="'+(x+50)+'" y="'+(y+66)+'" text-anchor="middle" font-size="10.5" fill="'+cl+'">'+l1+(l2?'-':'')+'</text><text x="'+(x+50)+'" y="'+(y+79)+'" text-anchor="middle" font-size="10.5" fill="'+cl+'">'+l2+'</text></g>'});
+    document.getElementById('tuiles').innerHTML=s;
+    var ordre=M.map(function(m,i){return i}).sort(function(a,b){return M[b][k]-M[a][k]});
+    document.getElementById('barres').innerHTML=ordre.map(function(i){var m=M[i];return '<button type="button" class="barre-l" data-m="'+i+'" aria-pressed="'+(i===sel)+'"><span class="nom">'+m.n+'</span><span class="piste"><span class="plein" style="display:block;width:'+(mx?m[k]/mx*100:0)+'%"></span></span><span class="val">'+fmt(m[k])+'</span></button>'}).join('');
+    var m=M[sel],h='<h2>'+m.n+'<span class="fictif">'+L('fictif','fictional')+'</span></h2><p class="sous">'+L('Population de ','Population of ')+m.pop.toLocaleString(L('fr-CA','en-CA'))+L(' personnes. Comparaison avec la médiane des huit municipalités.',' people. Compared with the median of the eight municipalities.')+'</p><dl>';
+    P.forEach(function(p){p.i.forEach(function(x){var md=med(x.k),d=m[x.k]-md,txt=Math.abs(d)<1e-9?L('à la médiane','at the median'):(d>0?L('au-dessus de la médiane de ','above the median of '):L('sous la médiane de ','below the median of '))+fmt(md)+x.u;
+      h+='<div><dt>'+L(x.fr,x.en)+'</dt><dd>'+fmt(m[x.k])+x.u+'<small>'+txt+'</small></dd></div>'})});
+    document.getElementById('fiche').innerHTML=h+'</dl>';
+  }
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-p],[data-i],[data-m]');if(!b)return;
+    if(b.hasAttribute('data-p')){pil=+b.getAttribute('data-p');ind=0}else if(b.hasAttribute('data-i')){ind=+b.getAttribute('data-i')}else{sel=+b.getAttribute('data-m')}rendu()});
+  document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('g[data-m]')){e.preventDefault();sel=+e.target.getAttribute('data-m');rendu()}});
+  new MutationObserver(rendu).observe(root,{attributes:true,attributeFilter:['data-lang']});
+  rendu();
+})();
+</script>
+</body>
+</html>
