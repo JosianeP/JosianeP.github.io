@@ -88,6 +88,7 @@ h1 span{display:block}
 .roles>div:last-child{border-right:0;padding-right:0}
 .roles h3{font-size:1.45rem;margin-bottom:.6rem}
 .roles p{font-size:1.02rem;margin:0;color:var(--granit)}
+.roles .bouton{margin-top:1.2rem;font-size:.92rem;padding:.55rem 1.1rem}
 .roles .lieu{font-family:var(--sans);font-size:.92rem;color:var(--ardoise);margin-bottom:.9rem}
 @media (max-width:52rem){
   .roles{grid-template-columns:1fr}
